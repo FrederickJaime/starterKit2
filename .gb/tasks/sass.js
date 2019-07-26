@@ -12,7 +12,8 @@ const config = require('../config');
 
 export function sassCompile(){ 
 
-  let frameworkBuild = `${config.css.scssDir}/bss.sk.scss`;
+  let templateSass = `${config.css.scssDir}/main.scss`;
+  let bootstrap = `${config.css.scssDir}/bootstrap.scss`;
   let plugins = [
     autoprefixer (),
     discardcomments()
@@ -20,32 +21,47 @@ export function sassCompile(){
 
   return gulpMerge(
 
-    src([`${config.css.scssDir}/**/*`])
+    src([
+      `${config.css.scssDir}/components/**/*`,
+      `${config.css.scssDir}/pages/**/*`,
+    ])
     .pipe(sasslint())
     .pipe(sasslint.format())
     .pipe(sasslint.failOnError()),
 
-    src(frameworkBuild)
+    src(templateSass)
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' }).on('error',sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('.'))
     // adding name
-    .pipe(rename({basename: 'sk'}))
+    .pipe(rename({basename: 'styles'}))
     // sends to local app folder
-    .pipe(dest(config.local.appcss))
+    .pipe(dest(config.local.appcss)),
+
+    src(templateSass)
+    .pipe(sass({ outputStyle: 'compressed'}).on('error',sass.logError))
+    .pipe(postcss(plugins))
+    // adding name
+    .pipe(rename({basename: 'styles'}))
     // sends to dist folder
     .pipe(dest(config.css.distDir)),
 
-    src(frameworkBuild)
+    src(bootstrap)
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'compressed'}).on('error',sass.logError))
+    .pipe(sass({ outputStyle: 'expanded' }).on('error',sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('.'))
     // adding name
-    .pipe(rename({basename: 'sk.min'}))
+    .pipe(rename({basename: 'bootstrap'}))
     // sends to local app folder
-    .pipe(dest(config.local.appcss))
+    .pipe(dest(config.local.appcss)),
+
+    src(bootstrap)
+    .pipe(sass({ outputStyle: 'compressed'}).on('error',sass.logError))
+    .pipe(postcss(plugins))
+    // adding name
+    .pipe(rename({basename: 'bootstrap'}))
     // sends to dist folder
     .pipe(dest(config.css.distDir))
 

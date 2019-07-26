@@ -19,11 +19,10 @@ const ConfigOptions = function () {
     ===================================
   */
 	config.local = {
-    imagesDir: '../assets/local/images/*',
-    scssDir: '../assets/local/scss/*',
-    jsDir: '../assets/local/js/*',
+    imagesDir: `${config.srcDir}/images/*`,
     viewsDir: `${config.srcDir}/views/*.html`,
-		appcss: `${config.localDir}/css`,
+
+    appcss: `${config.localDir}/css`,
 		appjs: `${config.localDir}/js`,
 		appimg: `${config.localDir}/images`,
 	}

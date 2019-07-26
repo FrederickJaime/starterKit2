@@ -57,30 +57,12 @@ let watchers = function() {
 
 exports.devbuild = series(
   sassCompile,
-  parallel(
-    localViews,
-    localImages,
-    localSass
-  ),
-  localServe,
-  watchers
+ // parallel(
+ //   localViews,
+ //   localImages,
+ //   localSass
+ // ),
+ // localServe,
+ // watchers
 );
-
-/*
-exports.codebuild = series(
-  parallel(
-    sassClean,
-  ),
-  parallel(
-    sassCompile,
-    sassMinCompile,
-  ),
- // jsCompile,
-  //jsCompileMin,
-);
-*/
-
-
-
-
 
