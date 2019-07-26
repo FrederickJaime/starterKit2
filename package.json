@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "gulp process to generate static pages for templates",
   "scripts": {
-    "devbuild": "gulp --require babel-register --gulpfile ./.gb/tasks devbuild",
-    "codebuild": "gulp --require babel-register --gulpfile ./.gb/tasks codebuild"
+    "devbuild": "gulp --require babel-register --gulpfile ./.gb/tasks devbuild"
   },
   "babel": {
     "presets": [
@@ -26,8 +25,10 @@
   ],
   "dependencies": {
     "@babel/core": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
@@ -45,9 +46,11 @@
     "jquery": "^3.4.1",
     "merge-stream": "^2.0.0",
     "normalize-scss": "^7.0.1",
-    "popper": "^1.0.1",
+    "popper.js": "^1.15.0",
     "postcss-discard-comments": "^4.0.2",
     "tether": "^1.4.7",
-    "webpack": "^4.35.0"
+    "webpack": "^4.35.0",
+    "webpack-stream": "^5.2.1",
+    "whatwg-fetch": "^3.0.0"
   }
 }

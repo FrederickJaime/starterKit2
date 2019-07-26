@@ -9,6 +9,8 @@ const config = require('../config');
   Task to clean and compile and minified SASS
 */
 import { sassCompile } from './sass';
+
+import { jsCompile } from './jscompile';
 /*
   Local development
   ============================
@@ -45,11 +47,18 @@ let watchers = function() {
     console.log('========== running SassCompile ==========');
     sassCompile();
   });
+
+  const watchJs = watch(`${config.js.srcDir}/*/**`);
+  watchJs.on('change', function(path, stats) {
+    console.log('========== running JsCompile ==========');
+    jsCompile();
+  });
 }
 
 
 exports.devbuild = series(
   sassCompile,
+  jsCompile,
   parallel(
     localViews,
     localImages,
