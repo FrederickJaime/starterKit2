@@ -18,16 +18,9 @@ import { sassCompile } from './sass';
 import { localViews } from './localViews';
 import { localImages } from './localImages';
 import { localServe } from './localServe';
-import { localSass } from './localSass';
 
 
 let watchers = function() {
-
-  const watchLocalSass = watch(config.local.scssDir);
-  watchLocalSass.on('change', function(path, stats) {
-    console.log('========== running localSass ==========');
-    localSass();
-  });
 
   const watchLocalImages = watch(config.local.imagesDir);
   watchLocalImages.on('change', function(path, stats) {
@@ -57,12 +50,11 @@ let watchers = function() {
 
 exports.devbuild = series(
   sassCompile,
- // parallel(
- //   localViews,
- //   localImages,
- //   localSass
- // ),
- // localServe,
- // watchers
+  parallel(
+    localViews,
+    localImages,
+  ),
+  localServe,
+  watchers
 );
 

@@ -9,7 +9,7 @@ export function localImages() {
 
 
   return gulpMerge(
-    src(frameworkImageDist)
+    src(frameworkImageDist,{allowEmpty: true})
     .pipe(clean({force: true})),
 
     src(frameworkImages)
