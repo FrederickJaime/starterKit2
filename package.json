@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "gulp process to generate static pages for templates",
   "scripts": {
-    "devbuild": "gulp --require babel-register --gulpfile ./.starterkit/tasks devbuild",
-    "codebuild": "gulp --require babel-register --gulpfile ./.starterkit/tasks codebuild"
+    "devbuild": "gulp --require babel-register --gulpfile ./.gb/tasks devbuild",
+    "codebuild": "gulp --require babel-register --gulpfile ./.gb/tasks codebuild"
   },
   "babel": {
     "presets": [
@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.4.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -44,6 +45,7 @@
     "jquery": "^3.4.1",
     "merge-stream": "^2.0.0",
     "normalize-scss": "^7.0.1",
+    "popper": "^1.0.1",
     "postcss-discard-comments": "^4.0.2",
     "tether": "^1.4.7",
     "webpack": "^4.35.0"
