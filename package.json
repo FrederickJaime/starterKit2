@@ -1,7 +1,51 @@
 {
+  "name": "gulp-boostrap",
+  "version": "0.0.1",
+  "description": "gulp process to generate static pages for templates",
+  "scripts": {
+    "devbuild": "gulp --require babel-register --gulpfile ./.starterkit/tasks devbuild",
+    "codebuild": "gulp --require babel-register --gulpfile ./.starterkit/tasks codebuild"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "babelrc": false
+  },
+  "homepage": "http://",
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "author": "FJ",
+  "license": "MIT",
+  "browserslist": [
+    "ie >= 11",
+    "last 2 version",
+    "> 5%"
+  ],
   "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.4.1",
+    "merge-stream": "^2.0.0",
+    "normalize-scss": "^7.0.1",
+    "postcss-discard-comments": "^4.0.2",
+    "tether": "^1.4.7",
+    "webpack": "^4.35.0"
   }
 }

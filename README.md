@@ -1,2 +1,5 @@
 # gulp-bootstrap
-local set up using gulp and bootstrap.
+
+## make sure to update graceful-fs and minimatch
+`yarn upgrade graceful-fs`
+`yarn upgrade minimatch`
