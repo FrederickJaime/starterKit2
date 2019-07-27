@@ -10,7 +10,19 @@ const config = require('../config');
 */
 import { sassCompile } from './sass';
 
+/*
+  JS
+  ============================
+  Task to clean and compile and minified SASS
+*/
 import { jsCompile } from './jscompile';
+
+/*
+  JS
+  ============================
+  Task to clean and compile and minified SASS
+*/
+import { vendorCompile } from './vendor';
 /*
   Local development
   ============================
@@ -58,6 +70,7 @@ let watchers = function() {
 
 exports.devbuild = series(
   sassCompile,
+  vendorCompile,
   jsCompile,
   parallel(
     localViews,

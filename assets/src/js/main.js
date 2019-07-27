@@ -1,6 +1,5 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
-import 'bootstrap';
 
 
 function documentReady(fn) {
