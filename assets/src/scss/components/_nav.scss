@@ -1,0 +1,86 @@
+
+.navigation {
+
+  &-topbar {
+    background-color: $brand-red;
+    color: $brand-white;
+    font-size: 1.4rem;
+    font-weight: regular;
+    padding: 12px 0 10px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.6rem;
+      padding: 17px 0 15px;
+    }
+
+    a {
+      color: $brand-white;
+      margin-left: 30px;
+      text-decoration: none;
+
+      &:last-child {
+        color: $brand-red;
+        background-color: $brand-white;
+        padding: 11px 12px 10px 15px;
+        margin-left: 38px;
+      }
+    }
+  }
+
+  &-main {
+    background-color: $brand-black;
+    padding: 20px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 45px 0;
+    }
+  }
+
+  &-link-wrapper {
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+  }
+
+  &-logo {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 357px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &-links {
+    width: 100%;
+    padding-left: 55px;
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+
+    a {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: $brand-white;
+      margin-right: 5%;
+      line-height: 1;
+      text-decoration: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

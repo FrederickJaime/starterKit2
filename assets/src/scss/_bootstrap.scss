@@ -9,12 +9,15 @@
 //  xl: 1200px
 //);
 
-//$container-max-widths: (
-//  sm: 540px,
-//  md: 720px,
-//  lg: 960px,
-//  xl: 1140px,
-//);
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+);
+
+//$grid-gutter-width: 30px;
 
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';

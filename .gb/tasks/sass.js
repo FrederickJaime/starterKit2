@@ -44,6 +44,7 @@ export function sassCompile(){
     // sends to dist folder
     .pipe(dest(config.css.distDir)),
 
+    /*
     src(bootstrap)
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' }).on('error',sass.logError))
@@ -61,6 +62,7 @@ export function sassCompile(){
     .pipe(rename({basename: 'bootstrap'}))
     // sends to dist folder
     .pipe(dest(config.css.distDir))
+    */
 
   );
   

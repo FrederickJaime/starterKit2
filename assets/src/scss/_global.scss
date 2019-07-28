@@ -1,6 +1,13 @@
 
+* {
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *,
@@ -11,5 +18,10 @@ html {
 
 body {
   font-family: $monserrat;
-  font-size: 16px;
+  font-size: 10px;
+  font-weight: regular;
+}
+
+.container {
+  max-width: 1336px;
 }
