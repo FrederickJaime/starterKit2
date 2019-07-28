@@ -21,10 +21,7 @@ export function sassCompile(){
 
   return gulpMerge(
 
-    src([
-      `${config.css.scssDir}/components/**/*`,
-      `${config.css.scssDir}/pages/**/*`,
-    ])
+    src([`${config.css.scssDir}/**/*`])
     .pipe(sasslint())
     .pipe(sasslint.format())
     .pipe(sasslint.failOnError()),

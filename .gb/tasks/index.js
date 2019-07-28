@@ -54,13 +54,16 @@ let watchers = function() {
     localViews();
   });
 
-  const watchSass = watch(`${config.css.scssDir}/*/**`);
+  const watchSass = watch(`${config.css.scssDir}/**/*`);
   watchSass.on('change', function(path, stats) {
     console.log('========== running SassCompile ==========');
     sassCompile();
   });
 
-  const watchJs = watch(`${config.js.srcDir}/*/**`);
+  const watchJs = watch([
+    `${config.js.srcDir}/components/**/*`,
+    `${config.js.srcDir}/main.js`
+  ]);
   watchJs.on('change', function(path, stats) {
     console.log('========== running JsCompile ==========');
     jsCompile();
