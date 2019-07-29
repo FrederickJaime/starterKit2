@@ -1,0 +1,62 @@
+
+.footer {
+  background-color: $brand-gray-light;
+  padding-top: 49px;
+
+  &-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.71;
+  }
+
+  &-copy {
+    line-height: 1.71;
+
+    span {
+      display: block;
+    }
+  }
+
+  .fab {
+    color: $brand-black;
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+
+  &-link {
+    color: $brand-blue;
+    font-size: 1.4rem;
+  }
+
+  &-subscribe {
+    &--input {
+      @include placeholder {
+        color: $brand-blue;
+      }
+    }
+  }
+
+  &-legal {
+    background-color: $brand-gray;
+    font-size: 1rem;
+    margin-top: 70px;
+
+    a {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      padding: 18px 0 17px;
+      color: $brand-black;
+      margin-right: 24px;
+    }
+  }
+
+}

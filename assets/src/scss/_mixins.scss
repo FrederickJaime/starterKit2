@@ -1,0 +1,9 @@
+
+// PLACEHOLDER 
+// ===========
+@mixin placeholder {
+  // sass-lint:disable no-vendor-prefixes
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}
