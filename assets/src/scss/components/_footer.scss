@@ -34,13 +34,33 @@
   &-link {
     color: $brand-blue;
     font-size: 1.4rem;
+    transform: translateY(100%);
   }
 
   &-subscribe {
     &--input {
+      position: relative;
+      width: 100%;
+      max-width: 210px;
+      padding: 13px 20px 11px;
+      margin-right: 20px;
+
       @include placeholder {
-        color: $brand-blue;
+        color: $brand-gray;
+        font-size: 1.4rem;
       }
+    }
+
+    &--btn {
+      position: relative;
+      background-color: $brand-red;
+      font-weight: bold;
+      color: $brand-white;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      border: 0;
+      padding: 12px 18px 10px;
+
     }
   }
 
