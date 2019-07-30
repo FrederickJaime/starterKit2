@@ -33,6 +33,7 @@ section,
   display: block;
 }
 
+// SECTION COPY
 .section-header {
   text-transform: uppercase;
   font-weight: lighter;
@@ -41,7 +42,20 @@ section,
   line-height: 1.23;
   padding-top: 42px;
   padding-bottom: 16px;
+
+  &.with-top-border {
+    border-top: 1px solid $brand-gray-dark;
+  }
 }
+
+.section-subheader {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: $brand-red;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 
 .section-copy {
   font-size: 1.6rem;
@@ -50,6 +64,11 @@ section,
   margin-bottom: 32px;
   padding-right: 10%;
   color: $brand-black;
+  font-weight: 300;
+
+  &.leading {
+    margin-bottom: 8px;
+  }
 
   &--narrow {
     padding-right: 35%;
@@ -57,6 +76,41 @@ section,
 
   a {
     color: $brand-black;
+  }
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.section-bullets {
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  margin-bottom: 57px;
+
+  li {
+    position: relative;
+    padding-left: 24px;
+    display: inline-block;
+    width: 65%;
+
+    &:nth-child(2n + 1) {
+      width: 34%
+    }
+
+    &::before {
+      content: '•';
+      color: $brand-red;
+      font-size: 1.6rem;
+      font-family: arial;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
