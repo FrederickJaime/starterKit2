@@ -47,8 +47,13 @@ section,
   font-size: 1.6rem;
   line-height: 2.5;
   padding-top: 0;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   padding-right: 10%;
+  color: $brand-black;
+
+  &--narrow {
+    padding-right: 35%;
+  }
 
   a {
     color: $brand-black;
