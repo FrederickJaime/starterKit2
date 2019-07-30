@@ -1,0 +1,25 @@
+
+.gallery {
+
+  margin-bottom: 117px;
+  flex-wrap: wrap;
+
+  &-item {
+    position: relative;
+    width: calc((100% / 2) - 8px);
+    height: auto;
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(md) {
+      width: calc((100% / 5) - 16px);
+      margin-bottom: 18px;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

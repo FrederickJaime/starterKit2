@@ -18,11 +18,20 @@
       margin-left: 30px;
       text-decoration: none;
 
+      &.active {
+        color: $brand-yellow;
+      }
+
       &:last-child {
         color: $brand-red;
         background-color: $brand-white;
         padding: 11px 12px 10px 15px;
         margin-left: 38px;
+
+        &.active {
+          background-color: $brand-black;
+          color: $brand-white;
+        }
       }
     }
   }

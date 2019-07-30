@@ -4,10 +4,12 @@
   padding-top: 32px;
   padding-bottom: 40px;
 
-  &-red {
-    background-color: $brand-red;
-    color: $brand-white;
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
   }
+
+
 
   &-header {
     font-weight: 700;
@@ -22,6 +24,15 @@
     padding-right: 90px;
   }
 
+  &-btn-holder {
+    justify-content: flex-start;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
+  }
+
   &-btn {
     font-size: 2rem;
     padding: 16px 22px 13px;
@@ -30,5 +41,70 @@
     @include media-breakpoint-up(md) {
       margin-top: 0;
     }
+  }
+
+  // red callout
+  &-red {
+    background-color: $brand-red;
+    color: $brand-white;
+
+    .callout-btn {
+      background-color: $brand-white;
+      color: $brand-red;
+    }
+  }
+
+  // gray callout
+  &-gray {
+    background-color: $brand-gray-light;
+    color: $brand-black;
+
+    .callout-header {
+      color: $brand-red;
+    }
+  }
+
+  // black callout
+  &-black {
+    background-color: $brand-black;
+    color: $brand-white;
+
+    .callout-header {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 4rem;
+      line-height: 1.225;
+      margin-bottom: 29px;
+    }
+
+    .callout-copy {
+      line-height: 2;
+    }
+
+    .callout-btn {
+      background-color: $brand-red;
+      color: $brand-white;
+      margin-top: 30px;
+    }
+  }
+
+  // callout stack
+  &.stack {
+
+    .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .callout-copy {
+      padding-right: 0;
+    }
+
+    .callout-btn-holder {
+      justify-content: center;
+      align-items: center;
+    }
+
   }
 }

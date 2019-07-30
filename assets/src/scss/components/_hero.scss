@@ -1,0 +1,13 @@
+
+.hero {
+  position: relative;
+  display: block;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 620px;
+
+  &-contribute {
+    background-image: url('../images/contribute-hero-image.png');
+  }
+}

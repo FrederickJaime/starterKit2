@@ -33,8 +33,33 @@ section,
   display: block;
 }
 
+.section-header {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: $brand-red;
+  font-size: 3rem;
+  line-height: 1.23;
+  padding-top: 42px;
+  padding-bottom: 16px;
+}
+
+.section-copy {
+  font-size: 1.6rem;
+  line-height: 2.5;
+  padding-top: 0;
+  margin-bottom: 42px;
+  padding-right: 10%;
+
+  a {
+    color: $brand-black;
+  }
+}
+
 // BUTTONS
 // =========
+a {
+  text-decoration: none;
+}
 
 .button {
   position: relative;
@@ -45,6 +70,7 @@ section,
   font-size: 1.4rem;
   border: 0;
   padding: 12px 18px 10px;
+  text-decoration: none;
 
   &.white {
     background-color: $brand-white;

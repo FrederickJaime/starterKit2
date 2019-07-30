@@ -27,7 +27,7 @@ export function sassCompile(){
     .pipe(sasslint.failOnError()),
 
     src(templateSass)
-    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sass({ outputStyle: 'expanded' }).on('error',sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('.'))
