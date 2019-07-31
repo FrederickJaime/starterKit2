@@ -17,7 +17,6 @@
       color: $brand-white;
       margin-left: 30px;
       text-decoration: none;
-      
 
       &.active {
         color: $brand-yellow;
@@ -90,6 +89,10 @@
 
       &:last-child {
         margin-right: 0;
+      }
+
+      &.active {
+        color: $brand-yellow;
       }
     }
   }

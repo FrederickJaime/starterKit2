@@ -46,6 +46,10 @@ section,
   &.with-top-border {
     border-top: 1px solid $brand-gray-dark;
   }
+
+  &.black {
+    color: $brand-black;
+  }
 }
 
 .section-subheader {
@@ -96,10 +100,15 @@ section,
     position: relative;
     padding-left: 24px;
     display: inline-block;
-    width: 65%;
+    width: 100%;
 
-    &:nth-child(2n + 1) {
-      width: 34%
+    @include media-breakpoint-up(md) {
+
+      width: 65%;
+
+      &:nth-child(2n + 1) {
+        width: 34%;
+      }
     }
 
     &::before {
