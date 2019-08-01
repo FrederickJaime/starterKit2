@@ -1,6 +1,10 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
 
+import nav from './components/nav';
+
+
+
 
 function documentReady(fn) {
   if (document.readyState != 'loading') {
@@ -16,5 +20,5 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
-
+  nav();
 });
