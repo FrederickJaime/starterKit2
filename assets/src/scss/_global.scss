@@ -21,6 +21,11 @@ body {
   font-family: $monserrat;
   font-size: 10px;
   font-weight: 400;
+
+  &.no-scroll {
+    overflow: hidden;
+    position:fixed;
+  }
 }
 
 // CONTAINERS
@@ -37,7 +42,7 @@ section,
 // SECTION COPY
 .section-header {
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 600;
   color: $brand-red;
   font-size: 3rem;
   line-height: 1.23;
@@ -57,7 +62,7 @@ section,
   font-size: 2rem;
   line-height: 1.2;
   color: $brand-red;
-  font-weight: 400;
+  font-family: $dm;
   margin-bottom: 10px;
 }
 
@@ -69,7 +74,7 @@ section,
   margin-bottom: 32px;
   padding-right: 10%;
   color: $brand-black;
-  font-weight: 300;
+  font-weight: 400;
 
   &.leading {
     margin-bottom: 8px;
@@ -91,11 +96,12 @@ section,
 .section-bullets {
   padding: 0;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   list-style-type: none;
   position: relative;
   width: 100%;
   margin-bottom: 57px;
+  line-height: 1.875;
 
   li {
     position: relative;

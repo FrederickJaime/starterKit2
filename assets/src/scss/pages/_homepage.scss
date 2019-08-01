@@ -73,7 +73,7 @@
 
       @include media-breakpoint-up(md) {
         padding-right: 43px;
-        padding-left: 0;
+        padding-left: 15px;
       }
     }
 
@@ -87,6 +87,7 @@
         background-color: $brand-red;
         padding-left: 43px;
         padding-right: 43px;
+        border-left: 8px solid $brand-white;
       }
     }
 

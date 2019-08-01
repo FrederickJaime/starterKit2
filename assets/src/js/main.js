@@ -1,8 +1,10 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
+import jQuery from 'jquery';
+window.$ = window.jQuery = jQuery;
+import 'bootstrap';
 
 import nav from './components/nav';
-
 
 
 
