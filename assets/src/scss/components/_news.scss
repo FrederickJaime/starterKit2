@@ -1,7 +1,19 @@
 
 .news {
 
-  padding: 136px 0 77px;
+  padding: 0 0 77px;
+
+  @include media-breakpoint-up(md) {
+    padding: 136px 0 77px;
+  }
+
+  .col-12 {
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 15px;
+    }
+  }
 
   &-single {
     text-align: center;
