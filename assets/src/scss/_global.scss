@@ -100,42 +100,7 @@ section,
   height: auto;
 }
 
-.section-bullets {
-  padding: 0;
-  font-size: 1.6rem;
-  font-weight: 400;
-  list-style-type: none;
-  position: relative;
-  width: 100%;
-  margin-bottom: 57px;
-  line-height: 1.875;
 
-  li {
-    position: relative;
-    padding-left: 24px;
-    display: inline-block;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-
-      width: 65%;
-
-      &:nth-child(2n + 1) {
-        width: 34%;
-      }
-    }
-
-    &::before {
-      content: '•';
-      color: $brand-red;
-      font-size: 1.6rem;
-      font-family: arial;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-}
 
 // BUTTONS
 // =========
