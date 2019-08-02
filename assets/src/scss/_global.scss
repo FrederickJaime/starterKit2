@@ -24,7 +24,7 @@ body {
 
   &.no-scroll {
     overflow: hidden;
-    position:fixed;
+    position: fixed;
   }
 }
 
@@ -91,6 +91,13 @@ section,
   b {
     font-weight: 700;
   }
+}
+
+.section-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section-bullets {

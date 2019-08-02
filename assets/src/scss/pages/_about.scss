@@ -1,0 +1,19 @@
+
+
+.about-section {
+
+  .about-leading {
+    padding-top: 65px;
+    font-size: 2.4rem;
+  }
+
+  .section-copy--narrow {
+    @include media-breakpoint-up(md) {
+      padding-right: 20%;
+    }
+  }
+}
+
+.about-news-section {
+  padding-top: 78px;
+}
