@@ -1,0 +1,25 @@
+
+.pagination {
+  padding-top: 23px;
+  padding-bottom: 113px;
+  font-size: 1.6rem;
+
+  .next {
+    margin-left: 6px;
+  }
+
+  .previous {
+    margin-right: 4px;
+  }
+
+  .active {
+    color: $brand-blue;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    padding: 0 1px;
+    margin-left: 2px;
+  }
+} 
