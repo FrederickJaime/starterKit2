@@ -28,6 +28,14 @@
 
       &.active {
         color: $brand-yellow;
+
+        &:hover {
+          color: $brand-yellow;
+        }
+      }
+
+      &:hover {
+        color: $brand-gray;
       }
 
       &:last-child {
@@ -221,6 +229,14 @@
 
       &.active {
         color: $brand-yellow;
+
+        &:hover {
+          color: $brand-yellow;
+        }
+      }
+
+      &:hover {
+        color: $brand-gray;
       }
 
       @include media-breakpoint-up(lg) {

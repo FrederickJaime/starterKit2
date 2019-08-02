@@ -1,0 +1,52 @@
+
+.writers-intro {
+  padding-top: 66px;
+
+  .writing-leading {
+    font-size: 2.4rem;
+    line-height: 1.6;
+  }
+}
+
+.honor-list {
+
+  ul {
+    margin-bottom: 0;
+
+    a {
+      color: $brand-black;
+      text-decoration: underline;
+    }
+  }
+}
+
+.writers-gallery {
+
+  .gallery {
+    margin-bottom: 80px;
+  }
+
+  .gallery-item {
+
+    @include media-breakpoint-up(md) {
+      width: calc((100% / 6) - 16px);
+      margin-bottom: 37px;
+
+      &:nth-child(5n) {
+        margin-right: 16px;
+      }
+
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .gallery-item--name {
+    margin: 14px 0 0;
+    font-size: 1.6rem;
+    line-height: 1.375;
+    font-family: $dm;
+  }
+}
