@@ -1,0 +1,40 @@
+.news-header {
+  font-family: $dm;
+  font-size: 6.5rem;
+  line-height: 1.36;
+  letter-spacing: 2.6px;
+  font-weight: lighter;
+}
+
+.news-article {
+
+  &--title {
+    font-size: 2rem;
+    line-height: 2.8;
+    font-family: $dm;
+    color: $brand-red;
+    margin: 0;
+  }
+
+  &--content {
+    width: calc(100% - 260px);
+  }
+
+  &--copy {
+    font-size: 1.6rem;
+    line-height: 1.875;
+    font-weight: 400;
+  }
+
+  &--image {
+    position: relative;
+    width: 260px;
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
