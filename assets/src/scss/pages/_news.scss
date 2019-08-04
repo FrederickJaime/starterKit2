@@ -8,7 +8,7 @@
 }
 
 .news-article {
-  
+
   border-bottom: 1px solid $brand-black;
   padding-bottom: 54px;
   padding-top: 44px;
@@ -56,10 +56,12 @@
     }
   }
 
-  a.news-article--copy-more {
-    display: block;
-    color: $brand-blue;
-    font-size: 1.6rem;
+  a {
+    &.news-article--copy-more {
+      display: block;
+      color: $brand-blue;
+      font-size: 1.6rem;
+    }
   }
 
   &--image {

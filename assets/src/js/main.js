@@ -5,8 +5,9 @@ import 'whatwg-fetch';
 import jQuery from 'jquery';
 window.$ = window.jQuery = jQuery;
 import 'bootstrap';
-import nav from './components/nav';
 
+import nav from './components/nav';
+import contactForm from './components/contact.form.validation';
 
 
 
@@ -25,4 +26,5 @@ function documentReady(fn) {
 
 documentReady( function() {
   nav();
+  contactForm();
 });

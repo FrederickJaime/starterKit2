@@ -1,0 +1,28 @@
+
+.contact-membership {
+  margin-top: 42px;
+}
+
+.contact-form {
+  max-width: 525px;
+  margin-bottom: 172px;
+
+  &--fullname {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      position: relative;
+      width: calc(50% - 6px);
+    }
+  }
+
+  [type='submit'] {
+    width: 181px;
+    padding: 16px 24px 13px;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
