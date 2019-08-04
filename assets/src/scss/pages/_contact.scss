@@ -1,6 +1,22 @@
 
 .contact-membership {
   margin-top: 42px;
+
+  .membership-header {
+    text-transform: none;
+  }
+
+  span {
+    display: block;
+  }
+  .contact-membership-title {
+    display: block;
+  }
+
+  a {
+    display: block;
+    margin-top: 30px;
+  }
 }
 
 .contact-form {
