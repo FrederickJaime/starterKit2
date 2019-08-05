@@ -3,13 +3,15 @@ export default function () {
 
   const navBreakpoint = window.matchMedia('(max-width: 992px)'); // breakpoint for mobile nav
   const mainNav = document.querySelector('.navigation-main .navigation-links');
-  const topBarHolder = document.querySelector('.navigation-topbar .col-12');
-  const topBarLinks = [...topBarHolder.querySelectorAll('a')];
-  const burger = document.querySelector('.navigation-burger');
-  const body = document.querySelector('body');
 
 
-  if (mainNav.length !== 0) {
+
+  if (mainNav) {
+
+    const topBarHolder = document.querySelector('.navigation-topbar .col-12');
+    const topBarLinks = [...topBarHolder.querySelectorAll('a')];
+    const burger = document.querySelector('.navigation-burger');
+    const body = document.querySelector('body');
 
     let navBurgerCheck = function() {
       if (burger.classList.contains('active')) {

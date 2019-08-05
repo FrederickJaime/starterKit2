@@ -20,15 +20,13 @@
 
   .fab {
     color: $brand-black;
-    font-size: 1.6rem;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 12px;
+    font-size: 3rem;
+    margin: 0 15px 45px;
     text-decoration: none;
 
     @include media-breakpoint-up(md) {
-      margin-left: 20px;
-      margin-right: 0;
+      font-size: 1.6rem;
+      margin: 0 0 35px 20px;
     }
   }
 
@@ -36,40 +34,70 @@
     color: $brand-blue;
     font-size: 1.4rem;
     transform: translateY(100%);
+    margin-bottom: 63px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
   }
 
   &-subscribe {
     &--input {
       position: relative;
       width: 100%;
-      max-width: 210px;
+      
       padding: 13px 20px 11px;
-      margin-right: 20px;
+      margin: 5px 0 20px;
+      
 
       @include placeholder {
         color: $brand-gray;
         font-size: 1.4rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        margin-right: 20px;
+        max-width: 210px;
       }
     }
 
     &--btn {
       font-size: 1.4rem;
       padding: 12px 18px 10px;
+      margin-bottom: 63px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
     }
   }
 
   &-legal {
     background-color: $brand-gray;
-    font-size: 1rem;
-    margin-top: 70px;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     a {
       position: relative;
-      display: inline-block;
+      display: block;
       text-decoration: none;
-      padding: 18px 0 17px;
+      padding: 0 0 17px;
       color: $brand-black;
-      margin-right: 24px;
+      
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+      margin-top: 70px;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      a {
+        display: inline-block;
+        padding: 18px 0 17px;
+        margin-right: 24px;
+      }
     }
   }
 
