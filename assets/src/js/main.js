@@ -8,6 +8,7 @@ import 'bootstrap';
 
 import nav from './components/nav';
 import contactForm from './components/contact.form.validation';
+import pageVideos from './components/video';
 
 
 
@@ -27,4 +28,5 @@ function documentReady(fn) {
 documentReady( function() {
   nav();
   contactForm();
+  pageVideos();
 });

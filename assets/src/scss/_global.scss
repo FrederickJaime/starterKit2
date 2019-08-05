@@ -111,6 +111,45 @@ section,
   height: auto;
 }
 
+.section-video {
+  position: relative;
+  display: block;
+  height: 0;
+  padding-top: 56%;
+  margin-bottom: 92px;
+  overflow: hidden;
+
+  .video-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+
+    &.active {
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+  }
+}
+
 
 
 // BUTTONS
