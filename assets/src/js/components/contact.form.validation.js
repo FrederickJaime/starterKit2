@@ -5,7 +5,7 @@ export default function () {
   const theForm = document.querySelector('.contact-form');
 
 
-  if (theForm.length !== 0) {
+  if (theForm) {
 
     let formInputs = [...theForm.querySelectorAll('input:not([type="submit"]), textarea')];
 

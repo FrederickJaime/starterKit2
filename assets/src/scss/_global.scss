@@ -71,6 +71,10 @@ section,
   color: $brand-red;
   font-family: $dm;
   margin-bottom: 10px;
+
+  &.black {
+    color: $brand-black;
+  }
 }
 
 

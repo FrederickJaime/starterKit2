@@ -1,0 +1,28 @@
+
+.ind-image {
+  margin-top: 43px;
+}
+
+.ind-email {
+  margin-bottom: 30px;
+
+  a {
+    color: $brand-blue;
+  }
+}
+
+.section-copy.text-right.ind-contact {
+  padding-right: 0;
+
+  span {
+    display: block;
+  }
+}
+
+.ind-link {
+  font-size: 1.6rem;
+
+  &.prev-next {
+    margin: 160px 0 62px;
+  }
+}

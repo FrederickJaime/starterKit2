@@ -1,0 +1,132 @@
+
+.detail-member {
+  margin-bottom: 42px;
+
+  .team-member--copy {
+    line-height: 2;
+
+    .team-member--copy-header {
+      font-size: 2rem;
+      line-height: 1.4;
+    }
+  }
+
+
+  .team-member--image {
+    width: 260px;
+  }
+}
+
+.detail-casting {
+  .gallery-item--name {
+    font-size: 1.6rem;
+    line-height: 1.375;
+    margin-top: 6px;
+  }
+}
+
+.hero-details {
+  height: auto;
+  overflow: hidden;
+}
+
+.detail-shows {
+  @include media-breakpoint-up(md) {
+    padding-top: 0;
+    background-color: transparent;
+
+    .container {
+      max-width: 100%;
+    }
+
+    .col-md-12 {
+      padding: 0;
+    }
+
+    .shows {
+      margin-bottom: 0;
+    }
+
+    .shows--single.featured {
+      width: 50%;
+
+      .shows--single-logo--color {
+        height: 200%;
+      }
+
+      .shows--single-logo {
+        padding-top: 57px;
+        margin-bottom: 0;
+
+        img {
+          max-height: 100%;
+          width: 61%;
+          height: auto;
+        }
+      }
+
+      .shows--creds {
+        margin-top: 51px;
+      }
+
+      .shows--single-copy {
+        background-color: transparent;
+        z-index: 2;
+      }
+
+      .button.shows--single-cta {
+        font-size: 4.7rem;
+        border: 0;
+        max-width: 404px;
+        margin: 0 auto 54px;
+
+        &::after {
+          display: none;
+        }
+
+      }
+    }
+
+
+  }
+}
+
+.detail-header {
+  font-size: 6.5rem;
+  line-height: 1.36;
+  font-family: $dm;
+}
+
+.detail-leading {
+  font-size: 2.4rem;
+  line-height: 1.66;
+}
+
+.detail-list {
+  ul {
+    width: 100%;
+  }
+}
+
+.detail-membership {
+  max-width: 260px;
+  margin-top: 42px;
+
+  .membership-header {
+    text-transform: none;
+    background-color: $brand-black;
+    font-size: 2.4rem;
+    padding: 12px 0 10px;
+
+  }
+
+  .membership-copy {
+    font-size: 1.6rem;
+    line-height: 1.875;
+
+    span {
+      display: block;
+    }
+  }
+}
+
