@@ -36,34 +36,7 @@ export function jsCompile() {
       
     }))
     .pipe(dest(`${config.local.appjs}`))
-    /*
-    src([
-      `${config.js.srcDir}/main.js`
-    ])
-    .pipe(webpack({
-        mode: 'production',
-        watch: false,
-        output: {
-          filename: 'scripts.js'
-        },
-        module: {
-          rules: [
-            {
-              test: /\.js$/,
-              loader: 'babel-loader',
-              options: {
-                babelrc: false,
-                presets: [['@babel/preset-env']]
-              }
-            }
-          ],
-        },
-  
-    }, compiler, function(err, stats){
-      
-    }))
-    .pipe(dest(`${config.js.distDir}`))
-    */
+
 
   )
 

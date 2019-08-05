@@ -16,6 +16,7 @@ import { sassCompile } from './sass';
   Task to clean and compile and minified SASS
 */
 import { jsCompile } from './jscompile';
+import { jsCompileMin } from './jscompile.min';
 
 /*
   JS
@@ -67,6 +68,7 @@ let watchers = function() {
   watchJs.on('change', function(path, stats) {
     console.log('========== running JsCompile ==========');
     jsCompile();
+    jsCompileMin();
   });
 }
 
@@ -75,6 +77,7 @@ exports.devbuild = series(
   sassCompile,
   vendorCompile,
   jsCompile,
+  jsCompileMin,
   parallel(
     localViews,
     localImages,
