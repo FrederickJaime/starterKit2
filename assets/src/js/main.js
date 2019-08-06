@@ -26,7 +26,7 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
-  nav();
-  contactForm();
-  pageVideos();
+ // nav();
+ // contactForm();
+ // pageVideos();
 });

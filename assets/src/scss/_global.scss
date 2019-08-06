@@ -25,9 +25,10 @@ html {
 }
 
 body {
-  font-family: $monserrat;
-  font-size: 10px;
-  font-weight: 400;
+  font-family: $barlow;
+  font-size: 1.7rem;
+  line-height: 1.76;
+  letter-spacing: .98px;
 
   &.no-scroll {
     overflow: hidden;
@@ -37,7 +38,7 @@ body {
 
 // CONTAINERS
 .container {
-  max-width: 1336px;
+  max-width: 1140px;
 }
 
 section,
@@ -45,137 +46,3 @@ section,
   position: relative;
   display: block;
 }
-
-// SECTION COPY
-.section-header {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: $brand-red;
-  font-size: 3rem;
-  line-height: 1.23;
-  padding-top: 42px;
-  padding-bottom: 16px;
-
-  &.with-top-border {
-    border-top: 1px solid $brand-gray-dark;
-  }
-
-  &.black {
-    color: $brand-black;
-  }
-}
-
-.section-subheader {
-  font-size: 2rem;
-  line-height: 1.2;
-  color: $brand-red;
-  font-family: $dm;
-  margin-bottom: 10px;
-
-  &.black {
-    color: $brand-black;
-  }
-}
-
-
-.section-copy {
-  font-size: 1.6rem;
-  line-height: 2.5;
-  padding-top: 0;
-  margin-bottom: 32px;
-  padding-right: 10%;
-  color: $brand-black;
-  font-weight: 400;
-
-  &.leading {
-    margin-bottom: 8px;
-  }
-
-  &--narrow {
-    padding-right: 35%;
-  }
-
-  a {
-    color: $brand-black;
-  }
-
-  b {
-    font-weight: 700;
-  }
-}
-
-.section-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.section-video {
-  position: relative;
-  display: block;
-  height: 0;
-  padding-top: 56%;
-  margin-bottom: 92px;
-  overflow: hidden;
-
-  .video-poster {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-
-    display: block;
-    z-index: 2;
-    cursor: pointer;
-
-    &.active {
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity .25s ease-in-out;
-    }
-  }
-
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    display: block;
-    z-index: 1;
-  }
-}
-
-
-
-// BUTTONS
-// =========
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.button {
-  position: relative;
-  background-color: $brand-red;
-  font-weight: bold;
-  color: $brand-white;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  border: 0;
-  padding: 12px 18px 10px;
-  text-decoration: none;
-
-  &.white {
-    background-color: $brand-white;
-    color: $brand-red;
-  }
-}
-

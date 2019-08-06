@@ -17,7 +17,7 @@ $container-max-widths: (
   xl: 100%,
 );
 
-//$grid-gutter-width: 30px;
+$grid-gutter-width: 30px;
 
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';
