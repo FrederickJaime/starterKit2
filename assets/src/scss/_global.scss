@@ -26,8 +26,8 @@ html {
 
 body {
   font-family: $barlow;
-  font-size: 1.7rem;
-  line-height: 1.76;
+  font-size: 1.6rem;
+  line-height: 1.625;
   letter-spacing: .98px;
   overflow-x: hidden;
 
@@ -40,6 +40,9 @@ body {
 
   @include media-breakpoint-up(md) {
     padding-top: 88px;
+    font-size: 1.7rem;
+    line-height: 1.76;
+    
   }
 }
 

@@ -1,7 +1,12 @@
 
 .callout.at-your-home {
-  padding-top: 160px;
-  padding-bottom: 153px;
+  padding-top: 62px;
+  padding-bottom: 70px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 160px;
+    padding-bottom: 153px;
+  }
 
   .callout-copy {
     max-width: 461px;
@@ -13,4 +18,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
+
+  min-height: 75vh;
+
+  @include media-breakpoint-up(md) {
+    min-height: 50vh;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 0;
+  }
+
 }
