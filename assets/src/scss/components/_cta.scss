@@ -1,0 +1,17 @@
+
+.cta {
+  position: relative;
+  display: block;
+  color: $brand-gray-light;
+  font-family: $georgia;
+  font-size: 1.8rem;
+  line-height: 1.16;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: normal;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-gray-light;
+  }
+}

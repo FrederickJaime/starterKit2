@@ -7,12 +7,18 @@
 // $georgia
 
 .herobanner {
-  font-size: 6.1rem;
-  line-height: 1.08;
-  letter-spacing: 1.64px;
+  font-size: 4.6rem;
+  line-height: 1.04;
+  letter-spacing: 1.51px;
   text-transform: uppercase;
   font-family: $barlow-condensed;
-  font-weight: bold;
+  font-weight: 700;
+
+  @include media-breakpoint-up(md) {
+    font-size: 6.1rem;
+    line-height: 1.08;
+    letter-spacing: 1.64px;
+  }
 }
 
 h1,
@@ -22,7 +28,7 @@ h1,
   letter-spacing: 1.64px;
   text-transform: uppercase;
   font-family: $barlow-condensed;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h2,
@@ -32,7 +38,7 @@ h2,
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-family: $barlow-condensed;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3,

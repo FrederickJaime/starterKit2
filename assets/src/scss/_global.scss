@@ -29,10 +29,17 @@ body {
   font-size: 1.7rem;
   line-height: 1.76;
   letter-spacing: .98px;
+  overflow-x: hidden;
 
   &.no-scroll {
     overflow: hidden;
     position: fixed;
+  }
+
+  padding-top: 60px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 88px;
   }
 }
 
