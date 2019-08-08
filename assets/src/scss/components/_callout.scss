@@ -11,7 +11,6 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  
 
   @include media-breakpoint-up(md) {
     min-height: 60vh;
@@ -20,7 +19,7 @@
   }
 
   &-title {
-    font-size: 12vw; //3.8rem
+    font-size: 3.8rem; //3.8rem | 12vw
     line-height: 1.05;
     margin-bottom: 18px;
 

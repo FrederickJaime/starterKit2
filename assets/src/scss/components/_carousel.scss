@@ -1,0 +1,21 @@
+
+.carousel {
+  background-color: $brand-black;
+  color: $brand-gray-light;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 108px;
+    padding-bottom: 111px;
+  }
+
+  &-title {
+    text-align: center;
+  }
+
+  &-cta {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

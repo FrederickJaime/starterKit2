@@ -2,8 +2,13 @@
 .icon {
   use {
 
-    &.icon-logo {
-      fill: $brand-white;
+    &.icon-logo,
+    &.icon-mixercanister,
+    &.icon-coctailvariety,
+    &.icon-wirelessconnection,
+    &.icon-customize,
+    &.icon-bottleplugs {
+      fill: $brand-gray-light;
     }
   }
 }

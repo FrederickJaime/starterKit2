@@ -30,3 +30,25 @@
   }
 
 }
+
+.how-it-works-cta {
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+
+.bartending-has-arrived {
+  background-color: $brand-brown;
+
+  .callout-title {
+    max-width: 332px;
+  }
+
+  .callout-copy {
+    max-width: 306px;
+  }
+}
