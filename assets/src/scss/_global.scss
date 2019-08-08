@@ -56,6 +56,14 @@ section,
   display: block;
 }
 
+.image-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  min-height: 75vh;
+}
+
 .hidden {
   display: none;
   visibility: hidden;
