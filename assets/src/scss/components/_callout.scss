@@ -29,6 +29,19 @@
       margin-bottom: 33px;
     }
 
+    &.eyebrow {
+
+      font-size: 1.7rem;
+      line-height: 1.11;
+      margin-bottom: 15px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.2rem;
+        line-height: 1.59;
+        margin-bottom: 16px;
+      }
+    }
+
     br {
       display: none;
       visibility: hidden;
@@ -48,6 +61,12 @@
     }
   }
 
+
+  &-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
 
 }

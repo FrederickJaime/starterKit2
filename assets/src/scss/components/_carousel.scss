@@ -5,6 +5,36 @@
   padding-top: 61px;
   padding-bottom: 70px;
 
+  &.testimonial {
+    background-color: $brand-gray-light;
+    color: $brand-black;
+
+    .carousel-title {
+      margin-bottom: 15px;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 28px;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: flex;
+      visibility: visible;
+    }
+
+    .icon.chevron {
+      width: 28px;
+      height: 28px;
+
+      @include media-breakpoint-up(md) {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+  }
+
   .carousel {
     padding-top: 0;
     padding-bottom: 0;
@@ -29,6 +59,64 @@
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media-breakpoint-up(md) {
+      margin-top: 75px;
+    }
+  }
+
+  .testimonial-slide {
+    position: relative;
+    background-color: $brand-gray-light;
+    color: $brand-black;
+    border-bottom: 1px solid transparent;
+
+    .testimonial {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      text-align: center;
+      margin: 0;
+      padding: 64px 0;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+        line-height: 1.52;
+        padding: 88px 0;
+      }
+
+      &-divider {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          display: inline-block;
+        }
+      }
+
+      &-user {
+        text-align: center;
+
+        .eyebrow {
+          display: block;
+          font-size: 1.8rem;
+          line-height: 1.55;
+          text-transform: uppercase;
+
+          @include media-breakpoint-up(md) {
+            display: inline-block;
+            margin-right: 17px;
+          }
+        }
+      }
+
+      &-location {
+        font-size: 1.7rem;
+        line-height: 1.76;
+
+        @include media-breakpoint-up(md) {
+          margin-left: 19px;
+        }
+      }
+    }
   }
 
   .logo-slide {
@@ -48,12 +136,13 @@
 
       @include media-breakpoint-up(md) {
         width: 17%;
-        margin-bottom: 75px;
+        margin-bottom: 0;
       }
     }
 
-    
+
   }
+
   .carousel-control-prev,
   .carousel-control-next {
     opacity: 1;
@@ -65,6 +154,7 @@
       visibility: visible;
     }
   }
+
   .carousel-control-next {
     transform: translateX(100%);
   }

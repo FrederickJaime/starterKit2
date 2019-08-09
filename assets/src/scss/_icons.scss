@@ -1,5 +1,19 @@
 
 .icon {
+
+  &.chevron {
+    width: 38px;
+    height: 38px;
+
+    &:hover {
+
+      .icon-chevron {
+        stroke-width: 1.5;
+      }
+
+    }
+  }
+
   use {
 
     &.icon-logo,
@@ -9,6 +23,15 @@
     &.icon-customize,
     &.icon-bottleplugs {
       fill: $brand-gray-light;
+    }
+
+    &.icon-chevron {
+      stroke: $brand-black;
+      stroke-width: 1;
+
+      &.white {
+        stroke: $brand-gray-light;
+      }
     }
   }
 }
