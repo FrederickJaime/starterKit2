@@ -13,7 +13,7 @@ export default function () {
       ourCookies.classList.add('accepted');
 
       setTimeout( ()=> {
-        ourCookies.classList.add('out-of-view');
+        ourCookies.classList.add('hidden');
       }, 600);
 
     });
