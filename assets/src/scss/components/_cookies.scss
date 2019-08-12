@@ -1,0 +1,31 @@
+
+.cookies {
+  position: fixed;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+  background-color: $brand-brown;
+  text-align: center;
+  color: $brand-gray-light;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  // there is a js setTimeout to add 'out-of-view' class to hide element
+  transition: transform .4s ease;
+  z-index: 9;
+
+  &-cta {
+    margin: 17px auto 0;
+  }
+
+  &.accepted {
+    transform: translateY(100%);
+  }
+
+  &.out-of-view {
+    display: none;
+    visibility: hidden;
+  }
+
+}

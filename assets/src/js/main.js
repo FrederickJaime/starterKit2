@@ -9,6 +9,7 @@ import 'bootstrap';
 import nav from './components/nav';
 import contactForm from './components/contact.form.validation';
 import pageVideos from './components/video';
+import ourCookies from './components/cookies';
 
 
 
@@ -26,7 +27,5 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
- // nav();
- // contactForm();
- // pageVideos();
+  ourCookies();
 });

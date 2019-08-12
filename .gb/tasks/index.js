@@ -68,14 +68,14 @@ let watchers = function() {
   watchJs.on('change', function(path, stats) {
     console.log('========== running JsCompile ==========');
     jsCompile();
-    jsCompileMin();
+    //jsCompileMin();
   });
+
 }
 
 
 exports.devbuild = series(
   sassCompile,
-  vendorCompile,
   jsCompile,
   jsCompileMin,
   parallel(
@@ -84,5 +84,14 @@ exports.devbuild = series(
   ),
   localServe,
   watchers
+);
+
+exports.prodbuild = series(
+  sassCompile,
+  jsCompileMin,
+  parallel(
+    localViews,
+    localImages,
+  )
 );
 
