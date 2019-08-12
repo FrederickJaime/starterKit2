@@ -21,6 +21,7 @@
       height: 89px;
       max-width: 182px;
       overflow: visible;
+      margin: 0;
      }
 
     .icon {
@@ -52,6 +53,10 @@
     a {
       color: $brand-gray-light;
       text-decoration: none;
+
+      &:hover {
+        color: transparent-color($brand-gray-light, .5);
+      }
     }
 
     @include media-breakpoint-up(md) {
