@@ -68,7 +68,6 @@ let watchers = function() {
   watchJs.on('change', function(path, stats) {
     console.log('========== running JsCompile ==========');
     jsCompile();
-    //jsCompileMin();
   });
 
 }
@@ -77,7 +76,6 @@ let watchers = function() {
 exports.devbuild = series(
   sassCompile,
   jsCompile,
-  jsCompileMin,
   parallel(
     localViews,
     localImages,
