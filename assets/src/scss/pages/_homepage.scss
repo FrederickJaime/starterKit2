@@ -1,4 +1,13 @@
 
+
+.homepage-hero {
+  background-position: center bottom;
+
+  @include media-breakpoint-up(md) {
+    height: 650px;
+  }
+}
+
 .callout.at-your-home {
   padding-top: 62px;
   padding-bottom: 70px;

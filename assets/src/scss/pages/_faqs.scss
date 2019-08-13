@@ -1,0 +1,53 @@
+
+.faqs {
+
+  &-hero {
+
+    background-position: bottom center;
+
+    justify-content: flex-start;
+    padding-top: 69px;
+
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+      padding-top: 0;
+      background-position: top right;
+    }
+
+    .hero-headline {
+      color: $brand-black;
+      text-align: center;
+      font-size: 11.8vw;
+
+      @include media-breakpoint-up(md) {
+        font-size: 6.1rem;
+        text-align: left;
+      }
+    }
+  }
+
+  &.video-tutorials {
+
+    .video-btns {
+      position: relative;
+      margin-top: 47px;
+      padding-bottom: 38px;
+    }
+
+    hr {
+      margin: 0 0 68px;
+      border-top: 1px solid $brand-gray;
+      display: none;
+      visibility: hidden;
+
+      @include media-breakpoint-up(md) {
+        display: block;
+        visibility: visible;
+        margin: 0 0 97px;
+      }
+    }
+  }
+
+
+
+}

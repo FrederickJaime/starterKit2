@@ -14,7 +14,7 @@
   padding-right: 15px;
 
   @include media-breakpoint-up(md) {
-    height: calc(100vh - 88px);
+    height: 565px;
   }
 
   &-headline {

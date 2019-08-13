@@ -14,6 +14,16 @@
     }
   }
 
+  &.play {
+    width: 50px;
+    height: 50px;
+
+    @include media-breakpoint-up(md) {
+      width: 61px;
+      height: 61px;
+    }
+  }
+
   use {
 
     &.icon-logo,
@@ -32,6 +42,11 @@
       &.white {
         stroke: $brand-gray-light;
       }
+    }
+
+    &.icon-play {
+      opacity: .55;
+      fill: $brand-gray-light;
     }
   }
 }
