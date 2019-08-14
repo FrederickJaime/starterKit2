@@ -57,6 +57,10 @@
       &:hover {
         color: transparent-color($brand-gray-light, .5);
       }
+
+      &.active {
+        color: $brand-yellow;
+      }
     }
 
     @include media-breakpoint-up(md) {

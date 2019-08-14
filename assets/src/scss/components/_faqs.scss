@@ -1,4 +1,7 @@
 
+.accordion {
+  width: 100%;
+}
 
 .faqs {
   background-color: $brand-gray-light;
@@ -19,15 +22,13 @@
     position: relative;
     margin: 0;
     padding: 0;
+    width: 100%;
 
     &--single {
       background-color: transparent;
       border-right: 0;
       border-left: 0;
       border-top: 0;
-
-
-
 
     }
   }

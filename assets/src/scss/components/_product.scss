@@ -1,0 +1,50 @@
+
+.store-products--single {
+  position: relative;
+  display: block;
+  color: $brand-black;
+  margin-bottom: 38px;
+
+  &:hover {
+    color: $brand-black;
+    text-decoration: none;
+
+    .store-products--single-image {
+      img {
+        opacity: 0;
+      }
+    }
+  }
+
+  &-image {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      transition: opacity .25s ease-in-out;
+    }
+  }
+
+  &-copy {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 24px;
+
+    .name {
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
