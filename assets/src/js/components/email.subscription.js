@@ -21,8 +21,9 @@ export default function () {
           }
           // Go up the DOM.
           targetElement = targetElement.parentNode;
-      } while (targetElement);
+      } while (targetElement); 
   
+ 
       // Do something useful here.
       if(!subscriptionOverlay.classList.contains('hidden')) {
         closeBtn.click();

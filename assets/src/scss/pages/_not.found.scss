@@ -1,0 +1,25 @@
+
+.not-found-hero {
+  height: 100vh;
+  background-position: 83% 0%;
+  background-size: auto 92%;
+
+  @include media-breakpoint-up(md) {
+    background-position: right center;
+    height: 62.5vh;
+  }
+
+  .hero-headline {
+    text-align: left;
+    margin-bottom: 3px;
+
+  }
+
+  .hero-copy {
+    color: $brand-gray-light;
+  }
+
+  .hero-cta {
+    margin-top: 30px;
+  }
+}
