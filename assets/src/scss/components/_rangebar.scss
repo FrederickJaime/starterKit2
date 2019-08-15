@@ -1,28 +1,31 @@
 
 input {
+  // sass-lint:disable no-vendor-prefixes
+  // sass-lint:disable no-misspelled-properties
   &[type='range'] {
     -webkit-appearance: none;
     margin: 10px 0;
     width: 100%;
+    padding: 0;
 
     &::-webkit-slider-runnable-track {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: 0.2s;
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-      background: #999;
-      border-radius: 0px;
-      border: 0px solid #000101;
+      animate: .2s; // sass-lint:disable no-misspelled-properties
+      box-shadow: 0 0 0  $brand-black, 0 0 0  $brand-black;
+      background: $brand-gray;
+      border-radius: 0;
+      border: 0 solid  $brand-black;
     }
 
     &::-webkit-slider-thumb {
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-      border: 0px solid #000000;
+      box-shadow: 0 0 0  $brand-black, 0 0 0  $brand-black;
+      border: 0 solid  $brand-black;
       height: 3px;
       width: 25%;
-      border-radius: 0px;
-      background: #000;
+      border-radius: 0;
+      background:  $brand-black;
       cursor: pointer;
       -webkit-appearance: none;
       transform: translateY(-50%);
@@ -32,20 +35,20 @@ input {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: 0.2s;
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-      background: #999;
-      border-radius: 0px;
-      border: 0px solid #000101;
+      animate: .2s; // sass-lint:disable no-misspelled-properties
+      box-shadow: 0 0 0 $brand-black, 0 0 0 $brand-black;
+      background: $brand-gray;
+      border-radius: 0;
+      border: 0 solid $brand-black;
     }
 
     &::-moz-range-thumb {
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-      border: 0px solid #000000;
+      box-shadow: 0 0 0 $brand-black, 0 0 0 $brand-black;
+      border: 0 solid $brand-black;
       height: 3px;
       width: 25%;
-      border-radius: 0px;
-      background: #000;
+      border-radius: 0;
+      background: $brand-black;
       cursor: pointer;
       transform: translateY(-50%);
     }
@@ -55,60 +58,57 @@ input {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: 0.2s;
+      animate: .2s; // sass-lint:disable no-misspelled-properties
       background: transparent;
       border-color: transparent;
-      border-width: 39px 0;
+      border-width: 3px 0;
       color: transparent;
     }
 
     &::-ms-fill-lower {
-      background: #999;
-      border: 0px solid #000101;
-      border-radius: 0px;
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background: $brand-gray;
+      border: 0 solid $brand-black;
+      border-radius: 0;
+      box-shadow: 0 0 0 $brand-black, 0 0 x $brand-black;
     }
 
     &::-ms-fill-upper {
-      background: #999;
-      border: 0px solid #000101;
-      border-radius: 0px;
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background: $brand-gray;
+      border: 0 solid $brand-black;
+      border-radius: 0;
+      box-shadow: 0 0 0 $brand-black, 0 0 0 $brand-black;
     }
 
     &::-ms-thumb {
       position: relative;
-      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-      border: 0px solid #000000;
+      box-shadow: 0 0 0 $brand-black, 0 0 0 $brand-black;
+      border: 0 solid $brand-black;
       height: 3px;
       width: 120px;
-      border-radius: 0px;
-      background: #000;
+      border-radius: 0;
+      background: $brand-black;
       cursor: pointer;
       transform: translateY(-50%);
+    }
+
+    &:focus {
+      outline: none;
+
+      &::-webkit-slider-runnable-track {
+        background: $brand-gray;
+      }
+
+      //MS
+      &::-ms-fill-lower {
+        background: $brand-gray;
+      }
+
+      &::-ms-fill-upper {
+        background: $brand-black;
+      }
     }
 
   }
 
 
 }
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #666;
-}
-
-
-
-/*MS*/
-
-input[type=range]:focus::-ms-fill-lower {
-  background: #999;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #9995;
-}
-
