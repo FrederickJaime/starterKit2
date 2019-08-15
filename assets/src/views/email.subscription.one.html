@@ -106,7 +106,45 @@
     <path d="M29 59C12.984 59 0 45.792 0 29.5S12.984 0 29 0s29 13.208 29 29.5S45.016 59 29 59zm10.721-28.798l-17.952-9.13v18.261l17.952-9.13z" fill="#EBECE9" fill-rule="evenodd" opacity=".55"></path>
   </symbol>
 
+  <symbol viewBox="0 0 37 20" xmlns="http://www.w3.org/2000/svg" id="Arrow">
+    <g fill="none" fill-rule="evenodd">
+      <path d="M1 10l9.721 9.51m.592-18.427L1.5 10.5"></path>
+      <path d="M35.5 10.5H2.687" stroke-linecap="square"></path>
+    </g>
+  </symbol>
+
 </svg>
+
+<div class="email-subscription">
+  <div class="email-subscription-holder">
+    
+    <button class="email-subscription-close">
+      <img src="images/icon_close.png" alt="close button" />
+    </button>
+    <div class="email-subscription-image"  style="background-image:url('images/subscription-image.jpg')"></div>
+    <div class="email-subscription-content">
+      <h2 class="h1 email-subscription-head">
+        Cheers to the Best Deals
+      </h2>
+      <p class="email-subscription-copy">
+        Subscribe to our newsletter and drink to the best deals, promotions and Barsys updates that you won't want to miss!
+      </p>
+      <div class="form-single-field email-subscription-form">
+        <form>
+          <input type="text" placeholder="enter your email address"/>
+
+          <div class="form-submit">
+            <input type="submit"/>
+            <svg class="icon arrow right">
+              <use class="icon-arrow white" xlink:href="#Arrow"></use>
+            </svg>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     
 <nav class="navigation">
   <div class="container">
@@ -122,7 +160,7 @@
       
       <div class="col-12 col-md-8 d-flex align-items-center justify-content-between">
         <div class="navigation-links">
-          <a class="active" href="#">store</a>
+          <a href="#">store</a>
           <a href="#">technology</a>
           <a href="#">Community</a>
           <a href="#">Journal</a>
@@ -142,195 +180,195 @@
   </div>
 </nav>
 
+<header class="hero homepage-hero" style="background-image:url('images/Herobanner-homepage.jpg')">
 
+  <h1 class="hero-headline herobanner">
+    <span class="eyebrow hero-eyebrow">The Smart<br/> Robot-Bartender</span>
+    Revolutionizing Mixology
+  </h1>
+  <a class="cta hero-cta" href="#">Shop Now</a>
+
+</header>
 
 <main>
 
-    
-  <section class="store store-product-featured">
+  <section>
+
+    <div class="row no-gutters">
+
+      <div class="col-12 col-lg-6 d-flex justify-content-center order-2 order-lg-1">
+        <div class="callout at-your-home">
+          <div class="callout-content">
+            <h2 class="callout-title">
+                Bartender at <br/>Your Home
+            </h2>
+            <p class="callout-copy">
+                Barsys is a smart automated cocktail making machine that can create over 2,000 different drinks with nothing more than the click of a button. Let Barsys do the bartending so you can spend your time with the crowd.
+            </p>
+            <a class="cta callout-cta" href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 callout-image at-your-home--image order-1 order-lg-2" style="background-image: url('images/at-your-home.jpg')"></div>
+
+    </div>
+  
+  </section>
+
+  <section class="how-it-works">
 
     <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h2 class="h1 how-it-works-title">
+            How It Works
+          </h2>
+          <p class="how-it-works-copy">
+            Simply choose your favorite spirits and mixers. Allow Barsys to craft your cocktails while you and your friends do the drinking.
+          </p>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12">  
 
-          <h1 class="herobanner store-product-featured-head mobile-only">
-              <span class="name">BARSYS 2.0</span>
-              <span class="cost">$1,050</span>
-          </h1>
+          <div class="how-it-works-steps">
 
-          <div class="store-product-featured-image">
-            <img src="images/product_feature_image_1.png" alt="feature prod 1" />
-          </div>
-          <div class="store-product-featured-views">
-            <input type="range" max="4" min="1" value="1" step="1">
-            <div class="thumbs">
-              <button data-thumb-for="product_feature_image_1.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
-              <button data-thumb-for="product_feature_image_2.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
-              <button data-thumb-for="product_feature_image_3.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
-              <button data-thumb-for="product_feature_image_4.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
+
+            <div class="how-it-works-step">
+              <svg class="icon how-it-works-step-icon">
+                <use class="icon-bottleplugs" xlink:href="#BottlePlugs"></use>
+              </svg>
+              <p class="how-it-works-step-copy">
+                  Secure plugs on bottles
+              </p>
             </div>
+            <div class="how-it-works-step">
+              <svg class="icon how-it-works-step-icon">
+                <use class="icon-mixercanister" xlink:href="#MixerCanister"></use>
+              </svg>
+              <p class="how-it-works-step-copy">
+                  Pour mixers into canisters
+              </p>
+            </div>
+            <div class="how-it-works-step">
+              <svg class="icon how-it-works-step-icon">
+                <use class="icon-wirelessconnection" xlink:href="#WirelessConnection"></use>
+              </svg>
+              <p class="how-it-works-step-copy">
+                  Connect via bluetooth from phone or tablet
+              </p>
+            </div>
+            <div class="how-it-works-step">
+              <svg class="icon how-it-works-step-icon">
+                <use class="icon-customize" xlink:href="#Customize"></use>
+              </svg>
+              <p class="how-it-works-step-copy">
+                  Input spirits and mixers
+              </p>
+            </div>
+            <div class="how-it-works-step">
+              <svg class="icon how-it-works-step-icon">
+                <use class="icon-coctailvariety" xlink:href="#CocktailVariety"></use>
+              </svg>
+              <p class="how-it-works-step-copy">
+                  Choose from 2,000+ drinks or customize your own
+              </p>
+            </div>
+
+
           </div>
+  
+          <a class="cta how-it-works-cta" href="#">visit store</a>
 
         </div>
+      </div>
 
-        <div class="col-12 col-md-5 offset-md-1">
-          <h1 class="herobanner store-product-featured-head">
-            <span class="name">BARSYS 2.0</span>
-            <span class="cost">$1,050</span>
-          </h1>
-          <div class="store-product-featured-qt">
-            <button>-</button><span>1</span><button>+</button>
+    </div>
+
+  </section>
+
+
+
+
+  <section>
+
+      <div class="row no-gutters">
+  
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="callout smart-and-simple" style="background-image: url('images/get-app-mobile.jpg')">
+            <div class="callout-content">
+              <h2 class="callout-title">
+                  Smart and Simple
+              </h2>
+              <p class="callout-copy">
+                  Learn more about why Barsys is what your parties have been missing.
+              </p>
+              <a class="cta callout-cta" href="#">Learn More</a>
+            </div>
           </div>
-
-          <button class="store-button store-product-featured-btn">
-            add to cart 
-          </button>
-
-          <div class="store-product-feature-options">
-              <div class="accordion store-accordion-feature" id="accordion-store-feature">
-                  <div class="card faqs-accordion--single">
-            
-                      <button class="btn btn-link collapsed faqs-button" id="feature-one" type="button" data-toggle="collapse" data-target="#featureOne" aria-expanded="false" aria-controls="featureOne">
-                          features
-                          <span class="faqs-button-indicator">
-                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
-                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
-                          </span>
-                      </button>
-                
-                    <div id="featureOne" class="collapse" aria-labelledby="feature-one" data-parent="#accordion-store-feature">
-                      <div class="card-body faqs-content feature">
-                        <ul class="feature-list">
-                          <li><span>Most drinks made in under 20 seconds</span></li>
-                          <li><span>App available on Android and iOS</span></li>
-                          <li><span>Spill Free Design</span></li>
-                          <li><span>Sleek Metal Case Design</span></li>
-                          <li><span>Automated Cleaning</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card faqs-accordion--single">
+        </div>
+        <div class="col-12 col-lg-8">
         
-                  
-                    <button class="btn btn-link collapsed faqs-button" id="feature-two" type="button" data-toggle="collapse" data-target="#featureTwo" aria-expanded="false" aria-controls="featureTwo">
-                        Product Specs
-                      <span class="faqs-button-indicator">
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
-                      </span>
-                    </button>
-                    
-          
-                    <div id="featureTwo" class="collapse" aria-labelledby="feature-two" data-parent="#accordion-store-feature">
-                      <div class="card-body faqs-content feature">
-                        <ul class="feature-list">
-                          <li><span>Dimensions (in)</span><span>19.25"  x  13.5”  x  13.25”</span></li>
-                          <li><span>Weight</span><span>155 lbs</span></li>
-                          <li><span>User Interface</span><span>1iOS, Android</span></li>
-                          <li><span>Preperation Time</span><span>15 - 30 seconds</span></li>
-                          <li><span>Power</span><span>50W</span></li>
-                          <li><span>Warranty</span><span>1 Year</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-    
+
+
+          <div class="row no-gutters">
+
+            <div class="col-12 col-lg-6 callout-image bluetooth-connection--image" style="background-image: url('images/get-app.jpg')">
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <div class="callout bluetooth-connection">
+                <div class="callout-content">
+                  <h2 class="callout-title eyebrow">
+                      bluetooth connection
+                  </h2>
+                  <p class="callout-copy">
+                    Order cocktails with the touch of a button from your phone or tablet.
+                  </p>
+                  <a class="cta callout-cta" href="#">Get the App</a>
+                </div>
               </div>
+            </div>
+
+      
           </div>
 
+          <div class="row no-gutters">
+
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <div class="callout customizable-drinks">
+                <div class="callout-content">
+                  <h2 class="callout-title eyebrow">
+                      Customizable Drinks
+                  </h2>
+                  <p class="callout-copy">
+                      Your cocktails, exactly how you want them. Add your signature drink to match the vibe.
+                  </p>
+                  <a class="cta callout-cta" href="#">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 callout-image customizable-drinks--image" style="background-image: url('images/customize-cocktails.jpg')">
+            
+            </div>
+      
+          </div>
+
+
+
+
         </div>
+  
       </div>
-    </div>
     
-
-  </section>
-
-  <section class="store store-included">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">  
-          <h2 class="h1 store-products-head">What’s Included</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12">  
-          <div class="store-included-products">
-            <div class="store-included-products--includes">
-              <img class="store-included-products--includes-number" src="images/number_3.png"/>
-              <p class="store-included-products--includes-copy">Mixer Cans</p>
-            </div>
-            <div class="store-included-products--includes">
-              <img class="store-included-products--includes-number" src="images/number_1.png"/>
-              <p class="store-included-products--includes-copy">Patented Wireless Mixer</p>
-            </div>
-            <div class="store-included-products--includes">
-              <img class="store-included-products--includes-number" src="images/number_1.png"/>
-              <p class="store-included-products--includes-copy">Removable Spill Tray for Easy Cleaning</p>
-            </div>
-            <div class="store-included-products--includes">
-              <img class="store-included-products--includes-number" src="images/number_5.png"/>
-              <p class="store-included-products--includes-copy">Bottle Mounts</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-  <section class="store store-products">
-    <div class="container">
-
-      <div class="row justify-content-center">
-        <div class="col-12">  
-          <h2 class="h1 store-products-head">Tag Alongs</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <a href="#" class="store-products--single">
-            <span class="store-products--single-image" style="background-image: url('images/store-prod-1-hover.jpg')">
-              <img src="images/store-prod-1.jpg" alt="product name" />
-            </span>
-            <p class="store-products--single-copy">
-              <span class="name">Barsys  2.0</span>
-              <span class="cost">$1,500</span>
-            </p>
-          <a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="#" class="store-products--single">
-            <span class="store-products--single-image" style="background-image: url('images/store-prod-2-hover.jpg')">
-              <img src="images/store-prod-2.jpg" alt="product name" />
-            </span>
-            <p class="store-products--single-copy">
-              <span class="name">Magic Mounts / Set of 5</span>
-              <span class="cost">$25</span>
-              
-            </p>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="#" class="store-products--single">
-            <span class="store-products--single-image" style="background-image: url('images/store-prod-3-hover.jpg')">
-              <img src="images/store-prod-3.jpg" alt="product name" />
-            </span>
-            <p class="store-products--single-copy">
-              <span class="name">Magic Mixer</span>
-              <span class="cost">$50</span>
-            </p>
-          </a>
-        </div>
-
-      </div>
-    </div>
   </section>
 
 
 
-  <section class="carousel testimonial dark">
+
+  <section class="carousel testimonial">
 
       <div class="container">
 
@@ -338,7 +376,7 @@
 
           <div class="col-12 col-md-6">
             <h2 class="h1 carousel-title">
-                They’re Talking
+                They Sip, They Share
             </h2>
           </div>
 
@@ -355,7 +393,7 @@
                   <div class="testimonial-slide">
 
                     <p class="testimonial">
-                        “This machine had totally changed my home party experience. The best gift that I ever got from my friends. I plan on purchasing one for my family’s house for our family parties, I can’t wait to introduce Barsys to them!”
+                      “This machine had totally changed my home party experience.”
                     </p>
 
                     <p class="testimonial-user">
@@ -396,14 +434,14 @@
               </div>
               <a class="carousel-control-prev" href="#carouselTestimonialsControls" role="button" data-slide="prev">
                 <svg class="icon chevron">
-                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                  <use class="icon-chevron" xlink:href="#Chevron"></use>
                 </svg>
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselTestimonialsControls" role="button" data-slide="next">
                 <svg class="icon chevron">
-                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                  <use class="icon-chevron" xlink:href="#Chevron"></use>
                 </svg>
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
@@ -425,7 +463,94 @@
   </section>
 
 
+  <section class="image-section" style="background-image: url('images/Barsys-Image.jpg')"></section>
 
+  <section class="carousel">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6">
+            <h2 class="h1 carousel-title">
+                The Barsys Buzz
+            </h2>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-10 col-md-12">
+
+
+            <div id="carouselLogoControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="logo-slide">
+
+                    <img src="images/logo_Wall-Street-Journal.png" alt=""/>
+                    <img src="images/logo_9to5-toys.png" alt=""/>
+                    <img src="images/logo_Digital-Trends.png" alt=""/>
+                    <img src="images/logo_in-the-know.png" alt=""/>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+
+                  <div class="logo-slide">
+
+                    <img src="images/logo_Wall-Street-Journal.png" alt=""/>
+                    <img src="images/logo_9to5-toys.png" alt=""/>
+                    <img src="images/logo_Digital-Trends.png" alt=""/>
+                    <img src="images/logo_in-the-know.png" alt=""/>
+
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+
+                  <div class="logo-slide">
+
+                    <img src="images/logo_Wall-Street-Journal.png" alt=""/>
+                    <img src="images/logo_9to5-toys.png" alt=""/>
+                    <img src="images/logo_Digital-Trends.png" alt=""/>
+                    <img src="images/logo_in-the-know.png" alt=""/>
+
+                  </div>
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="carouselLogoControls" role="button" data-slide="prev">
+                <svg class="icon chevron">
+                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                </svg>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselLogoControls" role="button" data-slide="next">
+                <svg class="icon chevron">
+                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                </svg>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      
+      <a class="cta carousel-cta" href="#">View More</a>
+      
+  </section>
 
 
   <section>
@@ -433,20 +558,19 @@
       <div class="row no-gutters">
   
         <div class="col-12 col-lg-4 d-flex justify-content-center order-2 order-lg-1">
-          <div class="callout not-sure-which">
+          <div class="callout bartending-has-arrived">
             <div class="callout-content">
               <h2 class="callout-title">
-                  Still not sure which to choose?
+                  The Future of Bartending Has Arrived 
               </h2>
               <p class="callout-copy">
-                  Don't hesitate to reach out.
-We are here to help find the best suited option for your needs.
+                  Learn more about why Barsys is what your parties have been missing.
               </p>
-              <a class="cta callout-cta" href="#">Contact Us</a>
+              <a class="cta callout-cta" href="#">Visit Store</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-8 callout-image order-1 order-lg-2" style="background-image: url('images/product-callout-image.jpg')"></div>
+        <div class="col-12 col-lg-8 callout-image bartending-has-arrived--image order-1 order-lg-2" style="background-image: url('images/bartending-has-arrived.jpg')"></div>
   
       </div>
     
@@ -509,6 +633,7 @@ We are here to help find the best suited option for your needs.
     </div>
   </div>
 </footer>
+
 
   <script src="js/scripts.js"></script>
 </body>

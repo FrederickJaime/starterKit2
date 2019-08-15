@@ -24,6 +24,17 @@
     }
   }
 
+  &.arrow {
+    position: relative;
+    width: 35px;
+    height: 19px;
+    transform-origin: center center;
+
+    &.right {
+      transform: scale(-1);
+    }
+  }
+
   use {
 
     &.icon-logo,
@@ -47,6 +58,15 @@
     &.icon-play {
       opacity: .55;
       fill: $brand-gray-light;
+    }
+
+    &.icon-arrow {
+      stroke: $brand-black;
+      stroke-width: 1.5;
+
+      &.white {
+        stroke: $brand-gray-light;
+      }
     }
   }
 }

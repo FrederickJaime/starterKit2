@@ -125,50 +125,8 @@
   }
 
   &-sign-up {
-    position: relative;
-    display: block;
-    border-bottom: 1px solid $brand-gray-light;
+
     margin-bottom: 69px;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-    }
-
-    form {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    input {
-
-      margin: 0;
-
-      &[type='text'] {
-        border: 0;
-        background-color: transparent;
-        color: $brand-gray;
-        width: 100%;
-        max-width: 255px;
-        letter-spacing: .88px;
-        font-weight: 300;
-      }
-
-      &[type='submit'] {
-        position: relative;
-        text-transform: uppercase;
-        background-color: transparent;
-        border: 0;
-        color: $brand-gray-light;
-
-        font-family: $georgia;
-        width: auto;
-        text-align: right;
-        padding-right: 0;
-        padding-left: 0;
-      }
-
-    }
   }
 
   &-copyright {

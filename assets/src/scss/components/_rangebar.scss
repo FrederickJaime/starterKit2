@@ -12,7 +12,7 @@ input {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: .2s; // sass-lint:disable no-misspelled-properties
+      animate: .2s;
       box-shadow: 0 0 0  $brand-black, 0 0 0  $brand-black;
       background: $brand-gray;
       border-radius: 0;
@@ -35,7 +35,7 @@ input {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: .2s; // sass-lint:disable no-misspelled-properties
+      animate: .2s;
       box-shadow: 0 0 0 $brand-black, 0 0 0 $brand-black;
       background: $brand-gray;
       border-radius: 0;
@@ -58,7 +58,7 @@ input {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: .2s; // sass-lint:disable no-misspelled-properties
+      animate: .2s;
       background: transparent;
       border-color: transparent;
       border-width: 3px 0;
