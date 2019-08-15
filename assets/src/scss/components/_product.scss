@@ -1,4 +1,122 @@
 
+.store-product-featured {
+  padding-top: 51px;
+  padding-bottom: 70px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 234px;
+    padding-bottom: 97px;
+  }
+
+  &-head {
+    position: relative;
+    margin-bottom: 53px;
+    display: none;
+    visibility: hidden;
+
+    &.mobile-only {
+      display: block;
+      visibility: visible;
+      text-align: center;
+
+      .cost {
+        font-weight: 400;
+        font-family: $barlow;
+      }
+
+      @include media-breakpoint-up(md) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      visibility: visible;
+    }
+
+    .cost {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+
+    span {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &-qt {
+    position: relative;
+    width: 58px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    line-height: 1.58;
+    margin: 31px auto 0;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 96px;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-views {
+
+    .thumbs {
+      position: relative;
+      width: 100%;
+      display: none;
+      visibility: hidden;
+      padding-top: 30px;
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: space-between;
+        visibility: visible;
+
+      }
+    }
+
+    button {
+      position: relative;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      width: 25%;
+
+      img {
+        position: relative;
+        display: block;
+        width: 66px;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 .store-products--single {
   position: relative;
   display: block;
@@ -48,3 +166,16 @@
     }
   }
 }
+
+.store-button {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid $brand-black;
+  color: $brand-black;
+  font-family: $georgia;
+  text-transform: uppercase;
+  padding: 20px 43px; 
+  letter-spacing: 5px;
+  line-height: 1;
+}
+

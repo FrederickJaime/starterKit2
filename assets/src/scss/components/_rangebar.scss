@@ -1,0 +1,114 @@
+
+input {
+  &[type='range'] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background: #999;
+      border-radius: 0px;
+      border: 0px solid #000101;
+    }
+
+    &::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 3px;
+      width: 25%;
+      border-radius: 0px;
+      background: #000;
+      cursor: pointer;
+      -webkit-appearance: none;
+      transform: translateY(-50%);
+    }
+
+    &::-moz-range-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background: #999;
+      border-radius: 0px;
+      border: 0px solid #000101;
+    }
+
+    &::-moz-range-thumb {
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 3px;
+      width: 25%;
+      border-radius: 0px;
+      background: #000;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    //ms
+    &::-ms-track {
+      width: 100%;
+      height: 1px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      border-width: 39px 0;
+      color: transparent;
+    }
+
+    &::-ms-fill-lower {
+      background: #999;
+      border: 0px solid #000101;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    }
+
+    &::-ms-fill-upper {
+      background: #999;
+      border: 0px solid #000101;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    }
+
+    &::-ms-thumb {
+      position: relative;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 3px;
+      width: 120px;
+      border-radius: 0px;
+      background: #000;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+  }
+
+
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #666;
+}
+
+
+
+/*MS*/
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #999;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #9995;
+}
+

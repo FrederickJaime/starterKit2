@@ -9,6 +9,16 @@
     background-color: $brand-gray-light;
     color: $brand-black;
 
+    &.dark {
+      background-color: $brand-black;
+      color: $brand-gray-light;
+
+      .testimonial-slide {
+        background-color: $brand-black;
+        color: $brand-gray-light;
+      }
+    }
+
     .carousel-title {
       margin-bottom: 15px;
 
@@ -70,6 +80,7 @@
     background-color: $brand-gray-light;
     color: $brand-black;
     border-bottom: 1px solid transparent;
+    font-family: $georgia;
 
     .testimonial {
       font-size: 1.6rem;

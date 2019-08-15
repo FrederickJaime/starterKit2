@@ -142,62 +142,152 @@
   </div>
 </nav>
 
-<header class="hero homepage-hero" style="background-image:url('images/store-hero.jpg')">
 
-  <h1 class="hero-headline herobanner">
-    Bartending Made Easy
-  </h1>
-
-
-</header>
 
 <main>
-  <section class="store store-breadcrumbs">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <a href="#">Home</a> / <a href="#">shop</a> / <a class="active" href="#">Shop all</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="store">
+
+    
+  <section class="store store-product-featured">
 
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8">
+        <div class="col-12 col-md-6">
 
-            <div class="navbar navbar-expand-md store-nav">
-              <span class="h1" href="#">Shop All</span>
-              <button class="navbar-toggler store-nav-toggler" type="button" data-toggle="collapse" data-target="#storeNav" aria-controls="storeNav" aria-expanded="false" aria-label="store product navigation">
-                <svg class="icon chevron">
-                  <use class="icon-chevron" xlink:href="#Chevron"></use>
-                </svg>
-              </button>
-              <div class="collapse navbar-collapse store-nav-links" id="storeNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Accessories</a>
-                  </li>
-                </ul>
-              </div>
+          <h1 class="herobanner store-product-featured-head mobile-only">
+              <span class="name">BARSYS 2.0</span>
+              <span class="cost">$1,050</span>
+          </h1>
+
+          <div class="store-product-featured-image">
+            <img src="images/product_feature_image_1.png" alt="feature prod 1" />
+          </div>
+          <div class="store-product-featured-views">
+            <input type="range" max="4" min="1" value="1" step="1">
+            <div class="thumbs">
+              <button data-thumb-for="product_feature_image_1.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
+              <button data-thumb-for="product_feature_image_2.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
+              <button data-thumb-for="product_feature_image_3.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
+              <button data-thumb-for="product_feature_image_4.png"><img src="images/product_thumb.png" alt="prod-thumb"/></button>
             </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-5 offset-md-1">
+          <h1 class="herobanner store-product-featured-head">
+            <span class="name">BARSYS 2.0</span>
+            <span class="cost">$1,050</span>
+          </h1>
+          <div class="store-product-featured-qt">
+            <button>-</button><span>1</span><button>+</button>
+          </div>
+
+          <button class="store-button store-product-featured-btn">
+            add to cart 
+          </button>
+
+          <div class="store-product-feature-options">
+              <div class="accordion store-accordion-feature" id="accordion-store-feature">
+                  <div class="card faqs-accordion--single">
+            
+                      <button class="btn btn-link collapsed faqs-button" id="feature-one" type="button" data-toggle="collapse" data-target="#featureOne" aria-expanded="false" aria-controls="featureOne">
+                          features
+                          <span class="faqs-button-indicator">
+                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
+                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
+                          </span>
+                      </button>
+                
+                    <div id="featureOne" class="collapse" aria-labelledby="feature-one" data-parent="#accordion-store-feature">
+                      <div class="card-body faqs-content feature">
+                        <ul class="feature-list">
+                          <li><span>Most drinks made in under 20 seconds</span></li>
+                          <li><span>App available on Android and iOS</span></li>
+                          <li><span>Spill Free Design</span></li>
+                          <li><span>Sleek Metal Case Design</span></li>
+                          <li><span>Automated Cleaning</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card faqs-accordion--single">
+        
+                  
+                    <button class="btn btn-link collapsed faqs-button" id="feature-two" type="button" data-toggle="collapse" data-target="#featureTwo" aria-expanded="false" aria-controls="featureTwo">
+                        Product Specs
+                      <span class="faqs-button-indicator">
+                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
+                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
+                      </span>
+                    </button>
+                    
+          
+                    <div id="featureTwo" class="collapse" aria-labelledby="feature-two" data-parent="#accordion-store-feature">
+                      <div class="card-body faqs-content feature">
+                        <ul class="feature-list">
+                          <li><span>Dimensions (in)</span><span>19.25"  x  13.5”  x  13.25”</span></li>
+                          <li><span>Weight</span><span>155 lbs</span></li>
+                          <li><span>User Interface</span><span>1iOS, Android</span></li>
+                          <li><span>Preperation Time</span><span>15 - 30 seconds</span></li>
+                          <li><span>Power</span><span>50W</span></li>
+                          <li><span>Warranty</span><span>1 Year</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+    
+              </div>
+          </div>
 
         </div>
       </div>
     </div>
-  
+    
+
+  </section>
+
+  <section class="store store-included">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">  
+          <h2 class="h1 store-products-head">What’s Included</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">  
+          <div class="store-included-products">
+            <div class="store-included-products--includes">
+              <img class="store-included-products--includes-number" src="images/number_3.png"/>
+              <p class="store-included-products--includes-copy">Mixer Cans</p>
+            </div>
+            <div class="store-included-products--includes">
+              <img class="store-included-products--includes-number" src="images/number_1.png"/>
+              <p class="store-included-products--includes-copy">Patented Wireless Mixer</p>
+            </div>
+            <div class="store-included-products--includes">
+              <img class="store-included-products--includes-number" src="images/number_1.png"/>
+              <p class="store-included-products--includes-copy">Removable Spill Tray for Easy Cleaning</p>
+            </div>
+            <div class="store-included-products--includes">
+              <img class="store-included-products--includes-number" src="images/number_5.png"/>
+              <p class="store-included-products--includes-copy">Bottle Mounts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 
   <section class="store store-products">
     <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-12">  
+          <h2 class="h1 store-products-head">Tag Alongs</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-md-4">
           <a href="#" class="store-products--single">
@@ -234,107 +324,131 @@
           </a>
         </div>
 
-        <div class="col-12 col-md-4">
-            <a href="#" class="store-products--single">
-              <span class="store-products--single-image" style="background-image: url('images/store-prod-4-hover.jpg')">
-                <img src="images/store-prod-4.jpg" alt="product name" />
-              </span>
-              
-              <p class="store-products--single-copy">
-                <span class="name">Magic Cans / Set of 3</span>
-                <span class="cost">$45</span>
-              </p>
-            </a>
-          </div>
       </div>
     </div>
   </section>
 
 
 
+  <section class="carousel testimonial dark">
 
-
-
-
-
-  <section class="store-callout">
       <div class="container">
-          <div class="row no-gutters">
-  
-            <div class="col-12 col-lg-3 d-flex justify-content-center">
-              <div class="callout">
-                <div class="callout-content">
-                  <h2 class="callout-title">
-                      Need some help?
-                  </h2>
 
-                  <a class="cta callout-cta" href="#">Contact Us</a>
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-6">
+            <h2 class="h1 carousel-title">
+                They’re Talking
+            </h2>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-10 col-md-12">
+
+
+            <div id="carouselTestimonialsControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-slide">
+
+                    <p class="testimonial">
+                        “This machine had totally changed my home party experience. The best gift that I ever got from my friends. I plan on purchasing one for my family’s house for our family parties, I can’t wait to introduce Barsys to them!”
+                    </p>
+
+                    <p class="testimonial-user">
+                        <span class="eyebrow testimonial-name">Beulah Houston</span> <span class="testimonial-divider">|</span> <span class="testimonial-location">New York, NY</span>
+                    </p>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+
+                  <div class="testimonial-slide">
+
+                      <p class="testimonial">
+                          “This machine had totally changed my home party experience.”
+                        </p>
+    
+                        <p class="testimonial-user">
+                            <span class="eyebrow testimonial-name">Beulah Houston</span> <span class="testimonial-divider">|</span> <span class="testimonial-location">New York, NY</span>
+                        </p>
+
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+
+                  <div class="testimonial-slide">
+                      <p class="testimonial">
+                          “This machine had totally changed my home party experience.”
+                        </p>
+    
+                        <p class="testimonial-user">
+                            <span class="eyebrow testimonial-name">Beulah Houston</span> <span class="testimonial-divider">|</span> <span class="testimonial-location">New York, NY</span>
+                        </p>
+
+                  </div>
+
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-lg-8 offset-lg-1 d-flex justify-content-center align-items-center">
-              <div class="accordion store-accordion" id="accordion-store">
-                  <div class="card faqs-accordion--single">
-            
-                      <button class="btn btn-link collapsed faqs-button" id="help-one" type="button" data-toggle="collapse" data-target="#helpOne" aria-expanded="false" aria-controls="helpOne">
-                          shipping and payment
-                          <span class="faqs-button-indicator">
-                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
-                            <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
-                          </span>
-                      </button>
-                
-                    <div id="helpOne" class="collapse" aria-labelledby="help-one" data-parent="#accordion-store">
-                      <div class="card-body faqs-content">
-                        Barsys mobile application is available on app store and play store. The mobile app communicates with the machine to deliver the cocktail you want to have. You will need an iOS or Android smartphone to operate the machine.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card faqs-accordion--single">
-        
-                  
-                    <button class="btn btn-link collapsed faqs-button" id="help-two" type="button" data-toggle="collapse" data-target="#helpTwo" aria-expanded="false" aria-controls="helpTwo">
-                        Return policy
-                      <span class="faqs-button-indicator">
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
-                      </span>
-                    </button>
-                    
-          
-                    <div id="helpTwo" class="collapse" aria-labelledby="help-two" data-parent="#accordion-store">
-                      <div class="card-body faqs-content">
-                        Barsys mobile application is available on app store and play store. The mobile app communicates with the machine to deliver the cocktail you want to have. You will need an iOS or Android smartphone to operate the machine.
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="card faqs-accordion--single">
-      
-                    <button class="btn btn-link collapsed faqs-button" id="headingThree" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Product queries
-                      <span class="faqs-button-indicator">
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--one"></span>
-                        <span class="faqs-button-indicator-bar faqs-button-indicator-bar--two"></span>
-                      </span>
-                    </button>
-      
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-store">
-                      <div class="card-body faqs-content">
-                        Barsys mobile application is available on app store and play store. The mobile app communicates with the machine to deliver the cocktail you want to have. You will need an iOS or Android smartphone to operate the machine.
-                      </div>
-                    </div>
-                  </div>
-              </div>
+              <a class="carousel-control-prev" href="#carouselTestimonialsControls" role="button" data-slide="prev">
+                <svg class="icon chevron">
+                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                </svg>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselTestimonialsControls" role="button" data-slide="next">
+                <svg class="icon chevron">
+                  <use class="icon-chevron white" xlink:href="#Chevron"></use>
+                </svg>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
 
-            <div class="col-12">
-              <a class="cta store-contact-cta" href="#">Contact Us</a>
-            </div>
-      
+
+
           </div>
+
+        </div>
+
       </div>
 
+
+
+
+      
+  </section>
+
+
+
+
+
+  <section>
+
+      <div class="row no-gutters">
+  
+        <div class="col-12 col-lg-4 d-flex justify-content-center order-2 order-lg-1">
+          <div class="callout not-sure-which">
+            <div class="callout-content">
+              <h2 class="callout-title">
+                  Still not sure which to choose?
+              </h2>
+              <p class="callout-copy">
+                  Don't hesitate to reach out.
+We are here to help find the best suited option for your needs.
+              </p>
+              <a class="cta callout-cta" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 callout-image order-1 order-lg-2" style="background-image: url('images/product-callout-image.jpg')"></div>
+  
+      </div>
     
   </section>
 

@@ -127,5 +127,34 @@
 
   &-content {
     padding: 0 70px 35px 0;
+
+    &.feature {
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+
+    .feature-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      width: 100%;
+
+      li {
+        padding: 11px 0;
+        font-size: 1.6rem;
+        line-height: 1.76;
+        border-top: 1px solid $brand-gray-light-alt;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.7rem;
+        }
+
+        &:first-of-type {
+          border-top: 0;
+        }
+      }
+    }
   }
 }

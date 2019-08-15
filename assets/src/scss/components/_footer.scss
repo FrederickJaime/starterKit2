@@ -94,6 +94,10 @@
       text-decoration: none;
       color: $brand-gray-light;
 
+      &.active {
+        color: $brand-yellow;
+      }
+
       &:hover {
         color: transparent-color($brand-gray-light, .5);
       }
