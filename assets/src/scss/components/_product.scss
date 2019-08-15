@@ -141,6 +141,14 @@
       text-decoration: none;
     }
 
+    .store-products--single-copy {
+
+      span {
+        display: inline-block;
+      }
+
+    }
+
   }
 
   &-image {
@@ -166,7 +174,8 @@
     margin: 0;
     padding-top: 24px;
 
-    .name {
+    .name,
+    .category {
       font-weight: 700;
     }
 
