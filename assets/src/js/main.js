@@ -29,6 +29,7 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
+  nav();
   ourCookies();
   backgroundImage();
   emailSubscription();

@@ -106,37 +106,91 @@
     <path d="M29 59C12.984 59 0 45.792 0 29.5S12.984 0 29 0s29 13.208 29 29.5S45.016 59 29 59zm10.721-28.798l-17.952-9.13v18.261l17.952-9.13z" fill="#EBECE9" fill-rule="evenodd" opacity=".55"></path>
   </symbol>
 
+  <symbol viewBox="0 0 37 20" xmlns="http://www.w3.org/2000/svg" id="Arrow">
+    <g fill="none" fill-rule="evenodd">
+      <path d="M1 10l9.721 9.51m.592-18.427L1.5 10.5"></path>
+      <path d="M35.5 10.5H2.687" stroke-linecap="square"></path>
+    </g>
+  </symbol>
+
 </svg>
     
 <nav class="navigation">
   <div class="container">
     <div class="row justify-content-center">
       
-      <div class="col-12 col-md-4">
-        <a class="navigation-logo" href="/">
-          <svg class="icon">
-            <use class="icon-logo" xlink:href="#barsys"></use>
-          </svg>
-        </a>
-      </div>
-      
-      <div class="col-12 col-md-8 d-flex align-items-center justify-content-between">
-        <div class="navigation-links">
-          <a class="active" href="#">store</a>
-          <a href="#">technology</a>
-          <a href="#">Community</a>
-          <a href="#">Journal</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <div class="navigation-search-cart d-flex align-items-center">
-          <button class="navigation-burger">
+      <div class="col-12">
+
+
+        <div class="navbar navbar-expand-md">
+          <a class="navigation-logo" href="/">
+            <svg class="icon">
+              <use class="icon-logo" xlink:href="#barsys"></use>
+            </svg>
+          </a>
+
+          <button class="navbar-toggler navigation-burger" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="main navigation">
             <span class="navigation-burger-bar"></span>
             <span class="navigation-burger-bar"></span>
           </button>
+          <div class="navigation-close">
+            <img src="images/icon_close_white.png" alt="close nav"/>
+          </div>
+
+          <div class="collapse navbar-collapse navigation-links" id="mainNav">
+            <div class="navigation-holder">
+
+              <div class="navigation-links-header">
+                <a href="#" class="navigation-category prods">
+                  <img src="images/nav-prods.png" alt="image alt"/>
+                  <p class="navigation-category-label">
+                    Products
+                  </p>
+                </a>
+                <a href="#" class="navigation-category acces">
+                  <img src="images/nav-prods.png" alt="image alt"/>
+                  <p class="navigation-category-label">
+                    Accessories
+                  </p>
+                </a>
+              </div>
+
+              <p class="navigation-links-label">
+                additional links
+              </p>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">store <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">technology</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">journal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact us</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
           <a class="navigation-search" href="#"><img src="images/search-icon.png"/></a>
           <a class="navigation-cart" href="#"><img src="images/shopping-cart-icon.png"/></a>
+
+
         </div>
+
+
+
       </div>
+
 
     </div>
   </div>
