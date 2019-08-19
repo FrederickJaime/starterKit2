@@ -80,6 +80,16 @@ button {
   margin: 0;
 }
 
+select {
+
+  background: transparent url('../images/chevron_down.png') no-repeat right center;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+}
+
 .video-btn {
   position: relative;
   background-color: transparent;

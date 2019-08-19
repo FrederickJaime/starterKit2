@@ -8,29 +8,12 @@
 
   &-breadcrumbs {
 
-    font-size: 1.1rem;
-    line-height: 2.27;
     padding-top: 22px;
 
     @include media-breakpoint-up(md) {
       display: none;
       visibility: hidden;
     }
-
-
-    a {
-      color: $brand-black;
-      text-transform: uppercase;
-
-      &.active {
-        font-weight: 700;
-      }
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
 
   }
 }
