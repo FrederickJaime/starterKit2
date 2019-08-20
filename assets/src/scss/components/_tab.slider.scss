@@ -38,3 +38,16 @@
     }
   }
 }
+
+.tab-slider-text {
+  .tab-slider-thumb {
+    width: 25%;
+    height: 3px;
+    background-color: $brand-black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left .35s ease-in-out;
+    transform: translateY(-50%);
+  }
+}

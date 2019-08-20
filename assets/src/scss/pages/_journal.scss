@@ -1,0 +1,230 @@
+
+.journal {
+
+  background-color: $brand-gray-light;
+
+  &-head {
+    text-align: center;
+    padding-top: 61px;
+    padding-bottom: 65px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 128px;
+      padding-bottom: 68px;
+    }
+  }
+
+  &-nav {
+    padding: 0;
+
+    .navbar-nav {
+      @include media-breakpoint-up(md) {
+        width: 100%;
+        border-top: 1px solid $brand-black;
+        margin-bottom: 40px;
+      }
+    }
+
+    .nav-item {
+
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+        width: 25%;
+        text-align: center;
+      }
+
+      &:last-child {
+        .nav-link {
+          margin-right: 0;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &-links {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+
+      @include media-breakpoint-up(md) {
+        position: relative;
+        top: 0;
+        width: auto;
+      }
+    }
+
+    .nav-link {
+      text-decoration: none;
+      background-color: $brand-black;
+      color: $brand-gray-light;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      padding: 20px 22px 21px;
+      font-family: $georgia;
+      border-bottom: 1px solid $brand-gray-light;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(md) {
+        background-color: transparent;
+        margin-right: 39px;
+        padding: 22px 0;
+        color: $brand-black;
+        border-bottom: 0;
+        width: 100%;
+      }
+    }
+
+    &-toggler {
+
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 39px;
+      top: -39px;
+
+      @include media-breakpoint-up(md) {
+        display: none;
+        visibility: hidden;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $brand-black;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transform-origin: center center;
+        transform: rotate(95deg);
+
+        .icon-chevron {
+          stroke-width: 1.5;
+        }
+      }
+
+    }
+  }
+
+  &-nav-label {
+    font-size: 1.3rem;
+    line-height: 1.53;
+    text-transform: uppercase;
+    font-family: $georgia;
+  }
+  &-post-listing {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 30px;
+
+    &:first-child {
+      margin-top: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 595px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-bottom: 100px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 150px;
+      }
+    }
+  }
+
+  &-post-details {
+    position: relative;
+    background-color: $brand-brown-light;
+    padding: 17px 27px 19px;
+    color: $brand-gray-light;
+
+    @include media-breakpoint-up(md) {
+      min-height: 338px;
+      width: 100%;
+      max-width: 555px;
+      padding: 40px 50px 61px;
+    }
+  }
+
+  &-post-date {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2.47px;
+    font-size: 1.1rem;
+    line-height: 2.27;
+    margin-bottom: 17px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 13px;
+      font-size: 1.2rem;
+      line-height: 2.25;
+    }
+  }
+
+  &-post-title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2.7rem;
+    line-height: 1.11;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 4px;
+      letter-spacing: 1.2px;
+      font-size: 3.5rem;
+      line-height: 1.57;
+    }
+
+  }
+
+  &-post-copy {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 69px;
+    }
+  }
+
+  &-post-thumb {
+    position: relative;
+    width: 100%;
+    height: 211px;
+    background-position: center center;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+
