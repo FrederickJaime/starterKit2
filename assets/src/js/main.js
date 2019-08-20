@@ -14,6 +14,7 @@ import backgroundImage from './components/background-image';
 import emailSubscription from './components/email.subscription';
 import purchaseForm from './components/purchase.form';
 import purchaseDiscount from './components/purchase.discount';
+import tabSlider from './components/tab.slider';
 
 
 
@@ -37,4 +38,5 @@ documentReady( function() {
   emailSubscription();
   purchaseForm();
   purchaseDiscount();
+  tabSlider();
 });
