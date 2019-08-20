@@ -12,6 +12,8 @@ import pageVideos from './components/video';
 import ourCookies from './components/cookies';
 import backgroundImage from './components/background-image';
 import emailSubscription from './components/email.subscription';
+import purchaseForm from './components/purchase.form';
+import purchaseDiscount from './components/purchase.discount';
 
 
 
@@ -33,4 +35,6 @@ documentReady( function() {
   ourCookies();
   backgroundImage();
   emailSubscription();
+  purchaseForm();
+  purchaseDiscount();
 });

@@ -1,0 +1,226 @@
+
+.technology-hero {
+
+  justify-content: flex-start;
+
+  @include media-breakpoint-up(md) {
+    background-position: top right;
+    justify-content: center;
+  }
+
+  .hero-headline {
+
+    color: $brand-black;
+    padding-top: 59px;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      padding-top: 0;
+    }
+  }
+}
+
+.callout-image.best-bar-image {
+  min-height: 0;
+}
+
+.frequenty-asked-questions.technology {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+
+.faqs.video-tutorials.technology  {
+
+  hr {
+    margin: 0 0 102px;
+  }
+
+}
+
+.what-it-includes {
+  padding-top: 84px;
+  padding-bottom: 1px;
+  background-color: $brand-gray-light;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 192px;
+    padding-bottom: 142px;
+  }
+
+  &-set {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+
+    &.set-one {
+      .what-it-includes-image {
+        max-width: 460px;
+
+        img {
+          transform: translateX(5%);
+          // sass-lint:disable nesting-depth
+          @include media-breakpoint-up(md) {
+            transform: translateX(0%);
+          }
+
+        }
+      }
+
+      .what-it-includes-desc {
+        max-width: 401px;
+      }
+    }
+
+    &.set-two {
+
+      .what-it-includes-image {
+
+        img {
+          transform: translateX(9%);
+          // sass-lint:disable nesting-depth
+
+          @include media-breakpoint-up(md) {
+            transform: translateX(0%);
+          }
+        }
+      }
+
+      .what-it-includes-pin.left {
+
+        margin-top: -32px;
+
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
+
+      }
+
+      .what-it-includes-desc {
+        @include media-breakpoint-up(md) {
+          padding-left: 58px;
+        }
+      }
+    }
+
+    &.set-three {
+
+      .what-it-includes-image {
+        max-width: 135px;
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(md) {
+          max-width: 260px;
+          margin-bottom: 0;
+        }
+
+        img {
+          transform: translateX(96%);
+
+          @include media-breakpoint-up(md) {
+            transform: translateX(48%);
+          }
+        }
+      }
+    }
+
+
+
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-image {
+    position: relative;
+    width: 100%;
+
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &-pin {
+    position: relative;
+    width: 26px;
+    height: 81px;
+    background-image: url('../images/what-includes-pin-w.png');
+    background-size: 12px auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center top;
+
+    @include media-breakpoint-up(md) {
+      width: 237px;
+      height: 26px;
+      background-image: url('../images/what-includes-pin-h.png');
+      background-size: auto 13px;
+    }
+
+    &.left {
+
+      @include media-breakpoint-up(md) {
+        transform: scale(-1);
+      }
+
+    }
+  }
+
+  &-desc {
+    position: relative;
+    text-align: center;
+
+    span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.7rem;
+      line-height: 1.48;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 36px;
+        font-size: 3.5rem;
+        line-height: 1.22;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+
+  }
+}
+
+.how-it-works.technology {
+
+  .how-it-works-steps {
+
+    .how-it-works-step {
+
+      flex-direction: column;
+      text-align: center;
+
+      .how-it-works-step-copy {
+        width: 100%;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 20%;
+      }
+
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      transform: rotate(0deg);
+      margin: 32px 0 10px;
+    }
+  }
+}
+

@@ -203,7 +203,7 @@
 
       <div class="row">
         <div class="col-12 order-2 order-md-1">
-          <a href="#">Information</a> > <a href="#">shipping</a> > <a class="active" href="#">payment</a>
+          <a  class="active" href="#">Information</a> > <a href="#">shipping</a> > <a href="#">payment</a>
         </div>
         <div class="col-12 order-1 order-md-2">
           <h1 class="purchase-header">
@@ -272,13 +272,30 @@
             </p>
 
             <div class="purchase-checkbox">
-              <input name="news-and-offers" type="checkbox"/> 
+              <input name="save-info" type="checkbox"/> 
               <p>Save This Information for Next Time</p>
             </div>
 
-            <button class="store-button purchase-btn">
-              Continue to Shipping Method
-            </button>
+            <div class="purchase-additional-info">
+
+              <div class="purchase-additional-info-holder">
+                <div class="purchase-input multi save-info">
+                  <input name="phone-number" type="text" placeholder="mobile phone number"/>
+                  <input name="region" type="text" placeholder=""/>
+                </div>
+  
+                <p class="purchase-additional-info-desc">
+                  Next time you checkout here or on other stores powered by Shopify, you’ll receive a code by SMS to securely purchase with Shopify Pay.
+                </p>
+                <p class="purchase-disclaimer">
+                  By continuing, you agree to Shopify Pay’s <a href="#">Privacy Policy</a> and <a href="#">Terms&nbsp;of&nbsp;Service</a>.
+                </p>
+              </div>
+
+            </div>
+
+
+            <input class="store-button purchase-btn" type="submit" value="Shipping Method" />
             
         
           </form>
@@ -356,7 +373,7 @@
               </div>
           </div>
 
-          <form class="purchase-form">
+          <form class="purchase-form promo-code">
 
             <div class="purchase-input multi promotional">
               <input name="promo-code" type="text" placeholder="promotional code"/>
@@ -369,7 +386,7 @@
           <div class="purchase-total">
 
             <div class="purchase-total-item">
-              <span>Subtotal</span><span>$4,545.00</span>
+              <span>Subtotal</span><span class="purchase-total-item-subtotal">$4,545.00</span>
             </div>
             <div class="purchase-total-item">
               <span>Taxes</span><span>Not Yet Calculated</span>
@@ -378,6 +395,19 @@
               <span>Shipping</span><span>Not Yet Calculated</span>
             </div>
 
+            <div class="purchase-total-discount">
+              <div class="purchase-total-item discount">
+                <span>$20 Discount</span><span>-$20.00</span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="purchase-total-grand">
+            <div class="purchase-total-item">
+              <span>Total</span><span class="h2 purchase-total-item-total">$4,545.00</span>
+            </div>
           </div>
 
 
