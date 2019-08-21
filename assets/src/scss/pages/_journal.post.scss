@@ -1,0 +1,75 @@
+
+.journal-post {
+
+  &-hero {
+    height: 236px;
+
+    @include media-breakpoint-up(md) {
+      height: 380px;
+    }
+  }
+
+  &-head {
+    padding-top: 52px;
+    margin-bottom: 21px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 160px;
+      margin-bottom: 37px;
+    }
+  }
+
+  &-date {
+    font-family: $georgia;
+    margin-bottom: 27px;
+    font-size: 1.3rem;
+    letter-spacing: 2.65px;
+    line-height: 1.53;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 29px;
+      font-size: 1.4rem;
+      letter-spacing: 2.86px;
+      line-height: 1.57;
+    }
+  }
+
+  &-copy {
+    font-size: 1.8rem;
+    line-height: 1.83;
+    letter-spacing: .5px;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.1rem;
+      line-height: 1.89;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-images {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+
+    > div {
+      position: relative;
+      width: calc(50% - 12px);
+      height: 209px;
+      background-size: cover;
+      background-position: center center;
+
+      @include media-breakpoint-up(md) {
+        height: 510px;
+      }
+
+    }
+  }
+
+}
