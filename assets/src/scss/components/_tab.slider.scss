@@ -49,5 +49,10 @@
     top: 0;
     transition: left .35s ease-in-out;
     transform: translateY(-50%);
+    opacity: 0;
+
+    @include media-breakpoint-up(md) {
+      opacity: 1;
+    }
   }
 }

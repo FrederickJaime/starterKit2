@@ -15,6 +15,7 @@ import emailSubscription from './components/email.subscription';
 import purchaseForm from './components/purchase.form';
 import purchaseDiscount from './components/purchase.discount';
 import tabSlider from './components/tab.slider';
+import tabSliderText from './components/tab.slider.text';
 
 
 
@@ -39,4 +40,5 @@ documentReady( function() {
   purchaseForm();
   purchaseDiscount();
   tabSlider();
+  tabSliderText();
 });
