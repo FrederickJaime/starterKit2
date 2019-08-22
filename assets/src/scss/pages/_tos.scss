@@ -1,7 +1,14 @@
 
-.journal {
-
+.terms {
   background-color: $brand-gray-light;
+
+  &-content {
+    padding-bottom: 65px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 160px;
+    }
+  }
 
   &-head {
     text-align: center;
@@ -17,6 +24,10 @@
   &-nav {
     padding: 0;
 
+    .tab-slider-thumb {
+      width: 50%;
+    }
+
     .navbar-nav {
       @include media-breakpoint-up(md) {
         width: 100%;
@@ -30,7 +41,7 @@
       position: relative;
 
       @include media-breakpoint-up(md) {
-        width: 25%;
+        width: 50%;
         text-align: center;
       }
 
@@ -129,104 +140,64 @@
     font-family: $georgia;
   }
 
-  &-post-listing {
+  &-last-updated {
     position: relative;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    margin-bottom: 30px;
+    font-family: $georgia;
+    font-size: 1.4rem;
+    line-height: calc(22/14);
+    letter-spacing: 2.86px;
+    text-transform: uppercase;
+    margin-top: 142px;
+    margin-bottom: 32px;
+    display: none;
+    visibility: hidden;
 
-    &:first-child {
+    &.bottom {
+      visibility: visible;
+      display: block;
       margin-top: 60px;
-    }
 
-    &:last-child {
-      margin-bottom: 60px;
-    }
-
-    @include media-breakpoint-up(md) {
-      height: 595px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      margin-bottom: 100px;
-
-      &:first-child {
-        margin-top: 0;
-      }
-
-      &:last-child {
-        margin-bottom: 150px;
+      @include media-breakpoint-up(md) {
+        visibility: hidden;
+        display: none;
       }
     }
-  }
-
-  &-post-details {
-    position: relative;
-    background-color: $brand-brown-light;
-    padding: 17px 27px 19px;
-    color: $brand-gray-light;
 
     @include media-breakpoint-up(md) {
-      min-height: 338px;
-      width: 100%;
-      max-width: 555px;
-      padding: 40px 50px 61px;
+      visibility: visible;
+      display: block;
     }
   }
 
-  &-post-date {
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 2.47px;
-    font-size: 1.1rem;
-    line-height: 2.27;
-    margin-bottom: 17px;
 
-    @include media-breakpoint-up(md) {
-      margin-bottom: 13px;
-      font-size: 1.2rem;
-      line-height: 2.25;
-    }
-  }
 
-  &-post-title {
+  &-header {
     position: relative;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
     font-size: 2.7rem;
-    line-height: 1.11;
-    margin-bottom: 10px;
+    line-height: calc(40/27);
+    letter-spacing: 1.1px;
+    margin-bottom: 15px;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: 4px;
-      letter-spacing: 1.2px;
       font-size: 3.5rem;
-      line-height: 1.57;
+      line-height: calc(43/35);
+      letter-spacing: 1.2px;
+      margin-bottom: 32px;
     }
 
-  }
+    &:first-of-type {
+      padding-top: 60px;
 
-  &-post-copy {
-    @include media-breakpoint-up(md) {
-      margin-bottom: 69px;
+      @include media-breakpoint-up(md) {
+        padding-top: 0;
+      }
+
     }
   }
 
-  &-post-thumb {
+  &-copy {
     position: relative;
-    width: 100%;
-    height: 211px;
-    background-position: center center;
-    background-size: cover;
-
-    @include media-breakpoint-up(md) {
-      display: none;
-      visibility: hidden;
-    }
+    margin-bottom: 30px;
   }
+
 }
-
-

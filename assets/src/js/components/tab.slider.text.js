@@ -11,7 +11,7 @@ export default function () {
 
       let tabSliderBtns = [...tabSliderText.querySelectorAll('.nav-item')];
       let tabSliderMarker = tabSliderText.querySelector('.tab-slider-thumb');
-      let tabSliderLabel = tabSliderText.querySelector('.journal-nav-label');
+      let tabSliderLabel = tabSliderText.querySelector('.nav-label');
 
       //let index = [...el.parentElement.childNodes].indexOf(el);
 
