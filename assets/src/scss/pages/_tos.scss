@@ -198,6 +198,21 @@
   &-copy {
     position: relative;
     margin-bottom: 30px;
+
+    a {
+      color: $brand-black;
+      text-decoration: none;
+    }
+  }
+
+  &-list {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 0 0 25px;
+
+    li {
+      padding-left: 10px;
+    }
   }
 
 }
