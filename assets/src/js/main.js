@@ -16,6 +16,7 @@ import purchaseForm from './components/purchase.form';
 import purchaseDiscount from './components/purchase.discount';
 import tabSlider from './components/tab.slider';
 import tabSliderText from './components/tab.slider.text';
+import underlines from './components/underlines';
 
 
 
@@ -41,4 +42,5 @@ documentReady( function() {
   purchaseDiscount();
   tabSlider();
   tabSliderText();
+  underlines();
 });

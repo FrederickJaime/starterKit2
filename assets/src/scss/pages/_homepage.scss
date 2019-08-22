@@ -101,6 +101,16 @@
 
 }
 
+.bluetooth-connection--image {
+  display: none;
+  visibility: hidden;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+    visibility: visible;
+  }
+}
+
 .bluetooth-connection {
   min-height: 30vh;
   text-align: center;
