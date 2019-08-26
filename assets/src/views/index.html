@@ -116,6 +116,9 @@
       </svg>
           
       <nav class="navigation">
+
+
+
         <div class="container">
           <div class="row justify-content-center">
             
@@ -181,7 +184,7 @@
       
                 </div>
       
-                <a class="navigation-search" href="#"><img src="images/search-icon.png"/></a>
+                <a class="navigation-search" data-toggle="collapse" href="#searchPanel" role="button" aria-expanded="false" aria-controls="searchPanel"><img src="images/search-icon.png"/></a>
                 <a class="navigation-cart" href="#"><img src="images/shopping-cart-icon.png"/></a>
       
       
@@ -193,6 +196,33 @@
       
       
           </div>
+        </div>
+
+        <div class="collapse search-panel" id="searchPanel">
+         
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <form class="search-panel-holder">
+                  <img class="search-panel-search-icon" src="images/search-icon.png"/><input class="search-panel-input" type="text" value="search"/><button class="search-panel-search-close"><img src="images/icon_close.png"/></button>
+                </form>
+                <div class="search-panel-results">
+                  <p class="search-panel-results-label">popular searches</p>
+                  <div class="search-panel-results-recos">
+                    <div class="results-terms">
+                      <span>Barsys 2.0</span>
+                      <span>FAQs</span>
+                      <span>Testimonials</span>
+                      <span>Accessories</span>
+                      <span>Recipes: Summer Cocktails</span>
+                    </div>
+                    <a class="results-cta" href="#">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </nav>
 
