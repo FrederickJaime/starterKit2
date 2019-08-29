@@ -13,9 +13,6 @@
 
     background-color: $brand-gray-light;
 
-
-    
-
     .navigation-close {
       opacity: 1;
     }
@@ -30,15 +27,15 @@
       fill: $brand-black;
     }
 
-    @include media-breakpoint-up(md) {    
+    @include media-breakpoint-up(md) {
+
       background-color: $brand-black;
 
-      .navigation-cart,
-      .navigation-search {
+      .navigation-cart {
         opacity: 1;
         pointer-events: auto;
       }
-  
+
       .icon-logo {
         fill: $brand-gray-light;
       }
@@ -376,6 +373,89 @@
       z-index: 1;
     }
 
+  }
+
+  .shop-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    z-index: 2;
+    background-color: $brand-black;
+    color: $brand-gray-light;
+    pointer-events: none;
+    opacity: 0;
+
+    @include media-breakpoint-up(md) {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    &-holder {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 45px 0;
+    }
+
+    &-options {
+      position: relative;
+      display: flex;
+    }
+
+    &-list {
+      position: relative;
+      margin-right: 90px;
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-label {
+      position: relative;
+      font-size: 1.2rem;
+      line-height: calc(14/12);
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    &-cta {
+      text-decoration: none;
+      color: $brand-gray-light-alt;
+      position: relative;
+      display: block;
+      margin-top: 49px;
+      font-size: 1.5rem;
+      line-height: calc(37/15);
+
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1.7rem;
+      line-height: calc(30/17);
+      height: 100%;
+
+      a {
+        text-decoration: none;
+        color: $brand-gray-light;
+      }
+    }
+
+    &-image {
+      position: relative;
+      width: 100%;
+      max-width: 387px;
+
+    }
   }
 
   .search-panel {
