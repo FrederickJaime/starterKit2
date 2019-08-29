@@ -10,7 +10,11 @@
   transition: background-color .4s ease;
 
   &.expanded {
+
     background-color: $brand-gray-light;
+
+
+    
 
     .navigation-close {
       opacity: 1;
@@ -24,6 +28,20 @@
 
     .icon-logo {
       fill: $brand-black;
+    }
+
+    @include media-breakpoint-up(md) {    
+      background-color: $brand-black;
+
+      .navigation-cart,
+      .navigation-search {
+        opacity: 1;
+        pointer-events: auto;
+      }
+  
+      .icon-logo {
+        fill: $brand-gray-light;
+      }
     }
   }
 
@@ -420,7 +438,6 @@
       position: absolute;
       left: 0;
       top: -42px;
-      border: 1px solid $brand-red;
       display: block;
       width: 17px;
       opacity: 0;
