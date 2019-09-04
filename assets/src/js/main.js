@@ -1,11 +1,7 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
 
-
-import jQuery from 'jquery';
-window.$ = window.jQuery = jQuery;
-import 'bootstrap';
-
+/*
 import nav from './components/nav';
 import contactForm from './components/contact.form.validation';
 import pageVideos from './components/video';
@@ -17,6 +13,7 @@ import purchaseDiscount from './components/purchase.discount';
 import tabSlider from './components/tab.slider';
 import tabSliderText from './components/tab.slider.text';
 import underlines from './components/underlines';
+*/
 
 
 
@@ -34,13 +31,5 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
-  nav();
-  ourCookies();
-  backgroundImage();
-  emailSubscription();
-  purchaseForm();
-  purchaseDiscount();
-  tabSlider();
-  tabSliderText();
-  underlines();
+
 });

@@ -1,74 +1,152 @@
 
-// typography
-// ==================
-// $barlow
-// $barlowCondensed
-// $marydale
-// $georgia
-
-.herobanner {
-  font-size: 13.5vw;// 4.6rem
-  line-height: 1.04;
-  letter-spacing: 1.51px;
-  text-transform: uppercase;
-  font-family: $barlow-condensed;
-  font-weight: 700;
+  
+// sass-lint:disable no-url-domains
+// sass-lint:disable no-url-protocols
+@import url('https://use.typekit.net/pek8iix.css');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:700|Barlow:400,700&display=swap');
 
 
-  @include media-breakpoint-up(md) {
-    font-size: 6.1rem;
-    line-height: 1.08;
-    letter-spacing: 1.64px;
-  }
-}
+// Fonts
+// =================================
+$font-standard: 'Barlow', sans-serif;
+$font-condensed: 'Barlow Condensed', sans-serif;
+$font-alt: 'Georgia', serif;
 
-h1,
-.h1 {
-  font-size: 3.8rem; // 3.8rem | 11.9vw
-  line-height: 1.05;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  font-family: $barlow-condensed;
-  font-weight: 700;
+$fonts-weight: (
+  $font-standard: (
+    'light': 300,
+    'book': 400,
+    'medium': 500,
+    'bold': 700,
+    'black': 800
+	 ),
+  $font-condensed: (
+    'book': 400,
+    'medium': 500,
+    'black': 800,
+   ),
+  $font-alt: (
+    'light': 300,
+    'medium': 500,
+    'bold': 700,
+    'black': 800
+  )
+ );
 
-  @include media-breakpoint-up(md) {
-    font-size: 5rem;
-    line-height: 1.1;
-    letter-spacing: 1.64px;
-  }
-}
 
-h2,
-.h2 {
-  font-size: 2.7rem;
-  line-height: 1.22;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  font-family: $barlow-condensed;
-  font-weight: 700;
 
-  @include media-breakpoint-up(md) {
-    font-size: 3.5rem;
-    line-height: 1.22;
-  }
-}
+// Header copy config
+// =================================
+// variables applied to _topography.scss
+$header-lineheight: 1;
+$header-margin-top: 0;
+$header-margin-bottom: 0;
+$header-styles: (
+  small (
+    h1: (font-size: 40px, line-height: 1.02, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h2: (font-size: 32px, line-height: 1.25, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h3: (font-size: 24px, line-height: 1.25, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h4: (font-size: 20px, line-height: 1.4, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h5: (font-size: 18px, line-height: 1.44, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h6: (font-size: 15px, line-height: 1.53, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    ),
+  medium (
+    h1: (font-size: 48px, line-height: 1.04, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h2: (font-size: 40px, line-height: 1.05, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h3: (font-size: 28px, line-height: 1.21, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h4: (font-size: 24px, line-height: 1.33, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h5: (font-size: 20px, line-height: 1.4, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h6: (font-size: 16px, line-height: 1.5, letter-spacing: 0, font-weight: calculate-font-weight('bold'))
+    ),
+  large (
+    h1: (font-size: 70px, line-height: 1.02, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h2: (font-size: 48px, line-height: 1.04, letter-spacing: 0, font-weight: calculate-font-weight('black')),
+    h3: (font-size: 28px, line-height: 1.21, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h4: (font-size: 24px, line-height: 1.33, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h5: (font-size: 20px, line-height: 1.4, letter-spacing: 0, font-weight: calculate-font-weight('bold')),
+    h6: (font-size: 16px, line-height: 1.5, letter-spacing: 0, font-weight: calculate-font-weight('bold'))
+    )
+);
 
-h3,
-.h3 {
-  font-size: 2.2rem;
-  font-family: $marydale;
-  font-weight: bold;
-  line-height: 1.59;
-  letter-spacing: 1.25px;
-  text-transform: uppercase;
-}
+// Body copy config
+// =================================
+// variables applied to _topography.scss
+$bodycopy-styles: (
+  small (
+    p: (font-size: 15px, line-height: 1.53, letter-spacing: 0, font-weight: calculate-font-weight('book'))
+  ),
+  medium (
+    p: (font-size: 16px, line-height: 1.5, letter-spacing: 0, font-weight: calculate-font-weight('book'))
+  )
+);
 
-h4,
-.h4 {
-  font-family: $georgia;
-  font-size: 1.4rem;
-  line-height: 1.57;
-  letter-spacing: 2.88px;
-  text-transform: uppercase;
-}
+
+// Breakpoints
+// =================================
+// There are no common breakpoints so these are just a suggestions
+// You'll need to define your own breakpoints to suit your design
+//
+$breakpoints: (
+  xsmall: 320px,
+  small: 540px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1440px
+);
+
+// Setup layout max-width
+$layout-margin: 0;
+$layout-max-width: 1336px;
+$layout-min-width: 320px;
+
+
+
+
+
+// Columns config
+//  ================================= 
+$gridconfig: (
+  'xsmall': (
+    'row-padding': 4px,
+    'col-padding': 12px
+	),
+  'small': (
+    'row-padding': 6px,
+    'col-padding': 12px
+	),
+  'medium': (
+    'row-padding': 24px,
+    'col-padding': 12px
+	),
+  'large': (
+    'row-padding': 44px,
+    'col-padding': 12px
+  ),
+);
+
+
+$columns: (
+  1: 08.333333333%,
+  2: 16.66666667%,
+  3: 25%,
+  4: 33.33333333%,
+  5: 41.66666667%,
+  6: 50%,
+  7: 58.33333333%,
+  8: 66.66666667%,
+  9: 75%,
+  10: 83.033333333%,
+  11: 91.66666667%,
+  12: 100%
+);
+
+
+
+// Visibility options
+//  ================================= 
+$visibility-config: (
+  small: visible,
+  medium: visible,
+  large: visible
+)
 
