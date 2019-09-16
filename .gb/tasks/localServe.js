@@ -11,7 +11,7 @@ export function localServe() {
     host: '127.0.0.1',
     livereload: true,
     open: true,
-    log: 'debug',
+   // log: 'debug',
     clientConsole: true,
     port: 8081
   }));

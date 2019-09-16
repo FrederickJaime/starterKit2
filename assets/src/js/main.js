@@ -1,20 +1,6 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
 
-/*
-import nav from './components/nav';
-import contactForm from './components/contact.form.validation';
-import pageVideos from './components/video';
-import ourCookies from './components/cookies';
-import backgroundImage from './components/background-image';
-import emailSubscription from './components/email.subscription';
-import purchaseForm from './components/purchase.form';
-import purchaseDiscount from './components/purchase.discount';
-import tabSlider from './components/tab.slider';
-import tabSliderText from './components/tab.slider.text';
-import underlines from './components/underlines';
-*/
-
 
 
 function documentReady(fn) {
