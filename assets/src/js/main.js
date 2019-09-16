@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 import 'whatwg-fetch';
 
-
+import sampleJs from './components/sample.component';
 
 function documentReady(fn) {
   if (document.readyState != 'loading') {
@@ -17,5 +17,7 @@ function documentReady(fn) {
 }
 
 documentReady( function() {
+
+  sampleJs();
 
 });
