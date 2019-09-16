@@ -3,33 +3,11 @@ const { series, parallel, watch, task } = require('gulp');
 const config = require('../config');
 
 
-/*
-  SASS
-  ============================
-  Task to clean and compile and minified SASS
-*/
 import { sassCompile } from './sass';
 
-/*
-  JS
-  ============================
-  Task to clean and compile and minified SASS
-*/
 import { jsCompile } from './jscompile';
 import { jsCompileMin } from './jscompile.min';
 
-/*
-  JS
-  ============================
-  Task to clean and compile and minified SASS
-*/
-import { vendorCompile } from './vendor';
-/*
-  Local development
-  ============================
-  These are the tasks for local development for
-  testing and/or viewing items for the framework
-*/
 import { localViews } from './localViews';
 import { localImages } from './localImages';
 import { localServe } from './localServe';
