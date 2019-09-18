@@ -6,4 +6,10 @@ $black: #000;
 $font-standard: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
 
 //breakpoints
-
+$breakpoints: (
+  xsmall: 320px,
+  small: 540px,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1440px
+);
