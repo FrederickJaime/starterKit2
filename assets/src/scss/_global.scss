@@ -33,9 +33,19 @@ img {
 body {
   background-color: transparent;
   scroll-behavior: smooth;
+  font-family: $font-standard;
+  font-weight: 400;
 }
 
 a,
 button {
   cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 0 5%;
 }

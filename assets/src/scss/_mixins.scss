@@ -13,6 +13,20 @@
   @return $trans-color;
 }
 
+// FONT TO REM
+// ===========
+
+@function calculate-rem($size) {
+  $rem-size: $size / $base-fontsize;
+  @return #{$rem-size}rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculate-rem($size);
+}
+
+// BREAKPOINT
+// ==========
 @mixin bp($breakpoint) {
 
   @if map-has-key($breakpoints, $breakpoint) {
