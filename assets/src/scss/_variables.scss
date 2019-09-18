@@ -7,9 +7,9 @@ $font-standard: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
 
 //breakpoints
 $breakpoints: (
-  xsmall: 320px,
-  small: 540px,
-  medium: 768px,
-  large: 1024px,
-  xlarge: 1440px
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
