@@ -17,14 +17,14 @@
     align-items: center;
   }
 
-  &-logo {
+  &__logo {
     position: relative;
     width: 100%;
     max-width: 160px;
     height: auto;
   }
 
-  &-cta {
+  &__cta {
     position: relative;
     font-weight: 700;
     color: $black;

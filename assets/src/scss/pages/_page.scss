@@ -1,1 +1,79 @@
 // you can add all of you css/scss here for now.
+
+.latest {
+  position: relative;
+  border-top: 2px solid $gray-light;
+
+  > div {
+    &:first-child {
+      padding-left: 5%;
+    }
+
+    &:nth-child(2) {
+      padding-right: 60px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    &:nth-child(3) {
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    &:last-child {
+      border-left: 1px solid $gray-light;
+      padding-right: 60px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+
+.measurable {
+  position: relative;
+  border-top: 2px solid $gray-light;
+
+
+  > div {
+    &:first-child {
+      padding-left: 5%;
+    }
+
+
+    &:last-child {
+      padding: 10px 5% 10px 15px;
+    }
+  }
+}
+
+.callout {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__cta {
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  p {
+    @include font-size(18px);
+    line-height: calc(20/18);
+    margin-top: 0;
+
+    @include bp(md) {
+      margin-top: 30px;
+    }
+  }
+
+  > div {
+    &:last-child {
+      @include bp(md) {
+        padding-left: 20px;
+      }
+    }
+  }
+
+}

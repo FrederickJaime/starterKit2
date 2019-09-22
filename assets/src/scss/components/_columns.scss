@@ -1,0 +1,47 @@
+
+.section_row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    @include font-size(36px);
+    line-height: calc(38/36);
+    margin: 0;
+
+  }
+
+  h3 {
+    @include font-size(25px);
+    line-height: 1;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+
+  @include font-size(20px);
+
+  &__column {
+    position: relative;
+    padding-top: 20px;
+
+    &.sm-6.md-3 {
+      width: 50%;
+
+      @include bp(md) {
+        width: 25%;
+      }
+    }
+
+    &.sm-12.md-6 {
+      width: 100%;
+
+      @include bp(md) {
+        width: 50%;
+      }
+    }
+  }
+}

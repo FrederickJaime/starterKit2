@@ -1,0 +1,55 @@
+
+
+.form {
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &-header {
+    @include font-size(30px);
+    line-height: calc(38/30);
+    margin: 0;
+  }
+
+  &-subheader {
+    @include font-size(18px);
+    margin-top: 10px;
+  }
+
+  form {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1176px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &-input {
+    position: relative;
+    width: 100%;
+    
+
+    @include bp(md) {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+    }
+
+    input {
+      position: relative;
+      display: block;
+      width: 100%;
+      border: 1px solid $gray-light;
+      border-bottom: 2px solid $black;
+    }
+
+    &:nth-child(2n) {
+      
+      @include bp(md) {
+        margin-right: 0;
+      }
+    }
+
+  }
+}
