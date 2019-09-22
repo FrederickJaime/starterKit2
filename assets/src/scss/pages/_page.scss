@@ -1,13 +1,53 @@
 // you can add all of you css/scss here for now.
 
-$black: #000;
-$white: #fff;
+// .fontNHGText {
+//     font-family: 'VerizonNHGeTX', Helvetica, Arial, sans-serif !important;
+//     letter-spacing: 0 !important
+// }
 
-.header {
-	height: 20px;
+* {
+    font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+header {
+	height: 30px;
 	width: 100%;
 	background-color: $black;
 	color: $white;
-	position: relative;
 	display: block;
 }
+
+nav {
+	height: 80px;
+	vertical-align: middle;
+	width: 100%;
+	padding: 20px 5%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #d8dada;
+
+}
+
+	.logo {
+		width: 160px;
+		height: 35px;
+		margin: 0;
+		vertical-align: middle;
+		float: left;
+		display: block;
+	}
+
+	.nav_link {
+		font-size: 20px;
+		line-height: 100%;
+		padding: 10px 0;
+		margin: 0;
+		vertical-align: middle;
+		font-weight: bold;
+		text-align: right;
+		color: $black;
+		float: right;
+	}
+
