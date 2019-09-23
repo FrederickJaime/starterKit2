@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>---</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+    <nav class="sticky">
+        <div class="blackBar"></div>
+        <div class="navBarLiner">
+            <a href="https://www.verizonwireless.com/homepage/business/" target="_blank">
+                <img src="./Verizon Business Mobility Solutions_files/verizon_logo.png" alt="Verizon" title="Verizon"></a>
+
+            <a href="https://info.verizonwireless.com/business-mobility-solutions-SEP2019.html#get-started">Get started</a>
+        </div>
+    </nav>
+
+    <main class="">
+
+
+        <h1 class="redCircle">You got it running!!!!</h1>
+
+
+    </main>
+
+    <footer class=>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
