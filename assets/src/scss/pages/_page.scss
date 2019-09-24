@@ -1,1 +1,192 @@
-// you can add all of you css/scss here for now.
+// var
+$mg: rem(50px); 
+
+// Grid
+.container {
+  padding: 0 $gutter;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-3 {
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+.col-6 {
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .col-3 {
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+
+  .col-6 {
+    flex: 0 1 auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .col-3 {
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
+  
+  .col-6 {
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+}
+
+
+// contents
+main {
+  position: relative;
+  padding-top: rem(110px);
+
+  section {
+    position: relative;
+  }
+}
+
+.hero {
+  display: flex;
+  height: rem(500px);
+  padding: $mg $mg $mg $gutter;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid $gray-400;
+  background-image: url('../images/VAB33797_hero_background.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.s1 {
+  padding: 0;
+  border-bottom: 2px solid $gray-400;
+  min-height: rem(400px);
+
+  img {
+    // max-width: 200px;
+    max-width: 80%;
+    margin-top: $mg;
+  }
+
+  .row {
+    align-items: stretch;
+  }
+
+  .blk {
+    background-color: $black;
+    color: $white;
+    height: 100%;
+    padding: $mg 5%;
+  }
+
+  .box {
+    padding: $mg 5%;
+  }
+
+  .blk:last-child {
+    border-left: 0;
+  }
+
+  ul {
+    padding: 0 0 0 rem(20px);
+    margin: 0;
+
+    li {
+      line-height: 1;
+      margin: rem(16px) 0;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .s1 {
+    padding: 0 0 0 $gutter;
+
+    .box {
+      padding: $mg 0 0 0;
+    }
+
+    .blk:last-child {
+      border-left: 1px solid $white;
+    }
+  }
+}
+
+.s2 {
+  padding: 0 0 $mg $gutter;
+
+  h2 {
+    margin-top: $mg;
+  }
+
+  h3 {
+    border-top: 1px solid $black;
+    margin-top: rem(30px);
+    padding-top: rem(20px);
+  }
+
+  &__content {
+    margin-right: $mg;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+  .s2 {
+    h3 {
+      margin-top: rem(70px);
+      padding-top: rem(30px);
+    }
+  }
+}
+
+.s3 {
+  padding: $mg $mg $mg $gutter;
+  background-color: $black;
+  color: $white;
+
+  .box {
+    margin-bottom: $mg;
+  }
+}
+
+.form {
+  padding: $mg $mg $mg $gutter;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .indication {
+    font-size: rem(15px);
+    margin-bottom: rem(10px);
+    display: block;
+  }
+
+  .call {
+    margin-top: rem(20px);
+  }
+}
+

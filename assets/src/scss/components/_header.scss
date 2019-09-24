@@ -1,0 +1,21 @@
+header {
+  z-index: $zindex-fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(110px);
+  padding: 0 $gutter;
+  border-top: rem(30px) solid $black;
+  border-bottom: 1px solid $gray-500;
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: rem(160px);
+    height: auto;
+  }
+}

@@ -1,0 +1,50 @@
+.btn {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  font-size: rem(20px);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.round-btn {
+  border-radius: rem(45px);
+  min-width: rem(200px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  font-size: rem(20px);
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  padding: rem(13px) rem(50px) rem(15px);
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.round-btn--white {
+  background-color: $white;
+  color: $black;
+  border: 1px solid $black;
+
+  &:hover {
+    background-color: $gray-900;
+    border: 1px solid $gray-800;
+    color: $white;
+  }
+}
+
+.round-btn--black {
+  background-color: $black;
+  color: $white;
+  border: 1px solid $white;
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid $black;
+    color: $black;
+  }
+}

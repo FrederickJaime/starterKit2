@@ -4,7 +4,7 @@
 // =================================
 // We use normalize.css for the bulk of our 'reset'
 
-@import '../../../node_modules/normalize-scss/sass/normalize';
+// @import '../../../node_modules/normalize-scss/sass/normalize';
 
 html {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ img {
   width: 100%;
 }
 
-@include normalize;
+// @include normalize;
 
 * {
   // sass-lint:disable no-vendor-prefixes
@@ -33,6 +33,8 @@ img {
 body {
   background-color: transparent;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 a,

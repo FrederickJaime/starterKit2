@@ -1,7 +1,13 @@
 
 @import './mixins';
-@import './colors';
 @import './variables';
+@import './abstracts/functions';
+@import './colors';
+@import './base/fonts';
+@import './base/types';
 @import './global';
+@import './components/buttons';
+@import './components/header';
+@import './components/footer';
 @import './pages/intro';
 @import './pages/page';

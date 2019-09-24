@@ -1,0 +1,16 @@
+footer {
+  position: relative;
+  background-color: $black;
+  padding: rem(50px) rem(50px) rem(50px) $gutter;
+  margin: 0;
+  color: $white;
+
+  img {
+    width: 200px;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: rem(14px);
+  }
+}

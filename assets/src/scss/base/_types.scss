@@ -1,0 +1,80 @@
+body {
+  font-family: $font-family-base;
+  font-size: rem(18px);
+  font-weight: $font-weight-normal;
+  line-height: $line-height-lg;
+  color: $gray-900;
+}
+
+h1,
+.h1 {
+  font-size: rem(45px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: rem(48px);
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h2,
+.h2 {
+  font-size: rem(36px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: rem(38px);
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h3,
+.h3 {
+  font-size: rem(25px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+h4,
+.h4 {
+  font-size: rem(20px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(16px);
+}
+
+h5,
+.h5 {
+  font-size: rem(22px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(16px);
+}
+
+h6,
+.h6 {
+  font-size: rem(18px);
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin-top: 0;
+  margin-bottom: rem(12px);
+}
+
+p,
+.p {
+  font-size: rem(18px);
+  font-weight: $font-weight-light;
+  line-height: $line-height-md;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+a {
+  color: inherit;
+}

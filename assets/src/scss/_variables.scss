@@ -1,0 +1,97 @@
+// SPACING
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+$spacer: 2rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    )
+  ),
+  $spacers
+);
+
+// FONT-FAMILY
+$font-family-serif: 'VerizonNHGeTX', serif;
+$font-family-sans-serif: 'VerizonNHGeDS', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// FONT-SIZE
+$font-size-sm: rem(12px) !default;
+$font-size-md: rem(20px) !default;
+$font-size-lg: rem(30px) !default;
+$font-size-xl: rem(60px) !default;
+$font-size-base: rem(18px) !default;
+
+// FONT-WEIGHT
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+// LINE-HEIGHT
+$line-height-sm: 1.2 !default;
+$line-height-md: 1.6 !default;
+$line-height-lg: 2 !default;
+$line-height-base: $line-height-md !default;
+
+// LAYOUT
+$container-max-widths: (
+  xs: 94%,
+  sm: 94%,
+  md: 94%,
+  lg: 94%,
+  xl: 1200px
+) !default;
+
+// 
+$gutter: 5%;
+
+// GRID
+$grid-columns: 12;
+$grid-gutter-width: 0;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+) !default;
+
+// TRANSITION
+$transition-base: all 0.25s ease-in-out;
+
+// Z-INDEX
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+// OPTIONS
+$enable-grid-classes: true !default;
