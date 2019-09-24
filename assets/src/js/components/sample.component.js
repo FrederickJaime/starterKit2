@@ -59,6 +59,35 @@ export default function () {
     });
   });
 
+
+  // Email validation
+  // =================
+  let formEmail = document.querySelector('.form__input.form__input--email');
+  let formEmailInput = formEmail.querySelector('input');
+
+
+  let emailValidation = function(inputVal, inputHolder) {
+
+    // Regex for email format
+    let emailFormat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if(!emailFormat.test(String(inputVal).toLowerCase())) {
+
+      inputHolder.classList.add('form__input--invalid');
+    } else {
+
+      inputHolder.classList.remove('form__input--invalid');
+    }
+  }
+
+  formEmailInput.addEventListener('keyup', (e) => {
+    emailValidation(e.target.value, formEmail);
+  });
+
+  formEmailInput.addEventListener('blur', (e) => {
+    emailValidation(e.target.value, formEmail);
+  });
+
   
   }
   
