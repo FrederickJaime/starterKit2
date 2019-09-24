@@ -32,5 +32,16 @@
     margin-bottom: 30px;
   }
 
+  &__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    @include bp(md) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
 
 }

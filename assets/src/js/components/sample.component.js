@@ -58,6 +58,7 @@ export default function () {
       emptyValidation(theInput.value, theInputHolder);
     });
   });
+  // =================
 
 
   // Email validation
@@ -87,6 +88,7 @@ export default function () {
   formEmailInput.addEventListener('blur', (e) => {
     emailValidation(e.target.value, formEmail);
   });
+  // =================
 
   
   }

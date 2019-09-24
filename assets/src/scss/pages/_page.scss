@@ -34,11 +34,39 @@
 .measurable {
   position: relative;
   border-top: 2px solid $gray-light;
+  min-height: 400px;
+  align-items: center;
 
+  &__subtitle {
+    position: relative;
+    padding-top: 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid $black;
+      top: 0;
+      left: 0;
+    }
+  }
 
   > div {
+
+    padding: 10px 15px;
+    min-height: 300px;
+
+
+    @include bp(md) {
+      padding: 10px 60px 10px 15px;
+      display: block;
+    }
+
     &:first-child {
       padding-left: 5%;
+      align-self: flex-start;
+      padding-right: 15px;
+      padding-top: 20px;
     }
 
 
