@@ -32,7 +32,32 @@ export default function () {
   
   // attaching eventListener
   mq.addListener(mqCheck);
+
+  // =================
+
+
+  // Simple form validation
+  // =================
+  let formFields = [...document.querySelectorAll('.form__input:not(.form__input--zip):not(.form__input--email):not(.form__input--phone)')];
+  let emptyValidation = function (inputVal, inputHolder) {
+    if(inputVal === '') {
+      inputHolder.classList.add('form__input--invalid');
+    } else {
+      inputHolder.classList.remove('form__input--invalid');
+    }
+  }
   
+  formFields.forEach( (theInputHolder) => {
+    let theInput = theInputHolder.querySelector('input');
+
+    theInput.addEventListener('keyup', (e) => {
+      emptyValidation(theInput.value, theInputHolder);
+    });
+
+    theInput.addEventListener('blur', (e) => {
+      emptyValidation(theInput.value, theInputHolder);
+    });
+  });
 
   
   }

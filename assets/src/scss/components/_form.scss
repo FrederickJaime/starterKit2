@@ -90,5 +90,13 @@
       visibility: hidden;
     }
 
+    &--invalid {
+
+      .form__input--error {
+        visibility: visible;
+      }
+    }
+
   }
+
 }
