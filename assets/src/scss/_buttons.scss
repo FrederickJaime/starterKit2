@@ -1,0 +1,57 @@
+.btn {
+  font-family: 'Vz Bold', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
+
+  &--pill {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px 40px;
+    background-color: white;
+    transition: background ease-in .1s;
+    position: relative;
+    // overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #ef1d1d;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      translate-Y: -100%;
+    }
+
+    &:hover {
+      // background-color: #ef1d1d;
+      color: white;
+
+      .btn--pill::after {
+        translate-Y: 0%;
+      }
+    }
+  }
+
+  &--slim {
+    padding: 14px 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    &--pill {
+      font-size: 22px;
+      line-height: 22px;
+      padding: 18px 50px;
+    }
+
+    &--slim {
+      padding: 10px 70px;
+    }
+  }
+}

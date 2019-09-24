@@ -1,0 +1,23 @@
+.header {
+  background-color: white;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 20px;
+  border-top: 30px solid black;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    width: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

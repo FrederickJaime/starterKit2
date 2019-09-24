@@ -33,9 +33,21 @@ img {
 body {
   background-color: transparent;
   scroll-behavior: smooth;
+  font-family: 'Vz Regular', sans-serif;
 }
 
 a,
 button {
   cursor: pointer;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.content {
+  overflow: auto;
 }
