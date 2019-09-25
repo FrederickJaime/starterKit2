@@ -178,13 +178,52 @@
             padding: 100px 0 0 0;
         }
         
-        .row3 {
+        .row1 {
             display: flex;
             width: 100%;
             @include positive;
             padding: 0 5%;
             flex-wrap: wrap;
+            border-bottom: 2px solid #d8dada;
+            background-image: linear-gradient(to bottom, #ffffff 50%, #000000 50%);
+            @include bp(medium) {
+                background-image: linear-gradient(to right, #ffffff 50%, #000000 50%);
+            }
         }
+        
+        .phoneImage {
+            width: 80%;
+        }
+        
+        .phoneImageColumn {
+            flex-direction: column;
+            justify-content: center;
+            padding: 8% 5% 5% 0;
+        }
+        
+        .blackColumns {
+            @include negative;
+            @include vz_bold_font;
+            @include vz_body_font;
+            height: 100%;
+            @include bp(medium) {}
+            padding: 24px;
+        }
+        
+        .row2 {
+            display: flex;
+            width: 100%;
+            @include positive;
+            padding: 0 5%;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #d8dada;
+        }
+        
+        .bullet_text {
+            padding: 20px 0;
+        }
+        
+        .row3 {}
         
         .four-columns {
             width: 50%;
