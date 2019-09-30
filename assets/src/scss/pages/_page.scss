@@ -88,9 +88,9 @@
         text-align: left;
         p {
             font-weight: normal;
-            font-size: 16px;
-            line-height: 18px;
-            @include bp(large) {
+            font-size: 18px;
+            line-height: 20px;
+            @include bp(medium) {
                 font-size: 20px;
                 line-height: 22px;
             }
@@ -184,7 +184,6 @@
         @include positive;
         flex-wrap: wrap;
         border-bottom: 2px solid #d8dada;
-        // background-image: linear-gradient(to bottom, #ffffff 50%, #000000 50%);
         @include bp(large) {
             padding: 0 5%;
             min-height: 400px;
@@ -209,15 +208,15 @@
     }
     
     .phoneImage {
-        width: 80%;
+        width: 100%;
         height: auto;
-        max-width: 400px;
+        max-width: 420px;
     }
     
     .phoneImageColumn {
         flex-direction: column;
         justify-content: center;
-        padding: 8% 5% 5% 0;
+        padding: 24px 15% 0 0;
     }
     
     .padLeft20 {
@@ -244,17 +243,25 @@
         @include negative;
         @include vz_bold_font;
         @include vz_body_font;
-        padding: 24px 0 24px 0;
+        padding: 24px;
         min-height: 250px;
+        @include bp(medium) {
+            min-height: 380px;
+            padding-right: 0;
+        }
         @include bp(large) {
-            padding: 24px 0 24px 24px;
+            padding-right: 0;
         }
         p {
             padding: 0 0 12px 0;
         }
     }
     
-    .last_column {
+    .third_black_col {
+        height: 100%;
+    }
+    
+    .last_black_col {
         @include bp(small) {
             padding-left: 24px;
         }
@@ -285,7 +292,7 @@
     .firstColumnR1 {
         padding: 24px 0 0 5%;
         @include bp(medium) {
-            padding: 24px 0 0 2.5%;
+            padding: 24px 0 0 10%;
         }
         @include bp(large) {
             padding: 24px 0 0 0;
