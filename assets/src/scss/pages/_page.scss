@@ -279,7 +279,7 @@
     .centerVertical {
         @include bp(large) {
             flex-direction: column;
-            justify-content: center; // adding comment
+            justify-content: center;
         }
     }
     
