@@ -241,7 +241,7 @@
     
     .blackColumns {
         position: relative;
-        @include: negative;
+        @include negative;
         @include vz_bold_font;
         @include vz_body_font;
         padding: 24px 0 24px 0;
@@ -283,8 +283,7 @@
     }
     
     .firstColumnR1 {
-        padding-top: 24px;
-        padding: 0 0 0 5%;
+        padding: 24px 0 0 5%;
         @include bp(medium) {
             padding: 24px 0 0 2.5%;
         }
