@@ -232,8 +232,6 @@
         padding-left: 20px;
     }
     
-    .row3 {}
-    
     .four-columns {
         width: 100%;
         display: flex;
@@ -354,21 +352,42 @@
         padding: 24px 5%;
     }
     
-    .form-columns {
+    .form-container {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
-        @include positive;
-        @include vz_bold_font;
-        @include vz_body_font;
-        @include bp(small) {}
-        @include bp(medium) {}
+        align-content: flex-start;
+        @include bp(small) {
+            width: 50%;
+            max-width: 1200px;
+        }
     }
     
-    .form-element-row {
+    .form-element-box {
         width: 100%;
+        display: flex;
+        font-weight: normal;
+        @include positive;
+        @include vz_body_font;
+        @include bp(small) {
+            width: calc(50% - 20px);
+            margin-right: 20px;
+        }
         border: 2px solid #dad8d8;
+    }
+    
+    .form-field-label {
+        @include vz_body_font;
+        font-size: 15px;
+        padding: 14px 0;
+    }
+    
+    .input-text {
+        @include vz_body_font;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 10px;
+        color: #585858;
     }
     
     .blackFoot {
