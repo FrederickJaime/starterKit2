@@ -1,406 +1,417 @@
-    // Tammy Rafaniello
-    @font-face {
-        font-family: "VerizonNHGeTX";
-        font-style: normal;
-        src: url("https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.eot#iefix");
-        src: url("https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.eot#iefix") format("eot"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.woff) format("woff"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.ttf) format("truetype")
-    }
-    
-    @font-face {
-        font-family: 'VerizonNHGeTX';
-        src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.eot);
-        src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.ttf) format('truetype');
-        font-weight: 700;
-        font-style: normal
-    }
-    
-    @font-face {
-        font-family: 'VerizonNHGeDS';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.eot);
-        src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.ttf) format('truetype')
-    }
-    
-    @font-face {
-        font-family: 'VerizonNHGeDS';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.eot);
-        src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.ttf) format('truetype')
-    }
-    /* %%%%%%%%%%%%%%%%%%%%%%% */
-    
-    $breakpoints: ( xsmall: 320px,
-    small: 540px,
-    medium: 768px,
-    large: 1024px,
-    xlarge: 1440px);
-    @mixin bp($breakpoint) {
-        @if map-has-key($breakpoints,
-        $breakpoint) {
-            @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-                @content;
-            }
-        }
-        @else {
-            @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+// Tammy Rafaniello
+@font-face {
+    font-family: "VerizonNHGeTX";
+    font-style: normal;
+    src: url("https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.eot#iefix");
+    src: url("https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.eot#iefix") format("eot"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.woff) format("woff"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'VerizonNHGeTX';
+    src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.eot);
+    src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeTX-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'VerizonNHGeDS';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.eot);
+    src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'VerizonNHGeDS';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.eot);
+    src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.ttf) format('truetype')
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%% */
+
+$breakpoints: ( xsmall: 320px,
+small: 540px,
+medium: 768px,
+large: 1024px,
+xlarge: 1440px);
+@mixin bp($breakpoint) {
+    @if map-has-key($breakpoints,
+    $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
         }
     }
-    /* %%%%%%%%%%%%%%%%%%%%%%% */
-    
-    @mixin vz_legal_font {
-        font-family: 'VerizonNHGeTX', Helvetica, Arial, sans-serif;
-        letter-spacing: 0;
-        text-align: left;
-        p {
-            font-size: 12px;
-            line-height: 18px;
-            padding: 0 0 20px 0;
-        }
+    @else {
+        @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
     }
-    
-    @mixin vz_bold_font {
-        font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
-        letter-spacing: 0;
-        font-weight: bold;
-        text-align: left;
-        h1 {
-            font-size: 46px;
-            line-height: 48px;
-            padding: 0 0 20px 0;
-        }
-        h2 {
-            font-size: 36px;
-            line-height: 38px;
-            padding: 0 0 20px 0;
-        }
-        h3 {
-            font-size: 25px;
-            line-height: 27px;
-            padding: 0 0 20px 0;
-        }
-    }
-    
-    @mixin vz_body_font {
-        font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
-        letter-spacing: 0;
-        text-align: left;
-        p {
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 20px;
-            @include bp(medium) {
-                font-size: 20px;
-                line-height: 22px;
-            }
-        }
-    }
-    
-    @mixin negative {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    
-    @mixin positive {
-        background-color: #ffffff;
-        color: #000000;
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-    }
-    
-    a {
-        color: #000;
-        border: none 0;
-    }
-    
-    a:focus {
-        outline: 0;
-    }
-    
-    button:focus {
-        outline: 0;
-    }
-    
-    .blackBar {
-        height: 30px;
-        @include negative;
-        width: 100%;
-        position: relative;
-    }
-    
-    .navBarLiner {
-        padding: 0% 5%;
-        width: 100%;
-        @include positive;
-        @include vz_bold_font;
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-        position: relative;
-    }
-    
-    .insideNavLiner {
-        padding: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .insideNavLiner a {
-        text-decoration: none;
-    }
-    
-    .sticky {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        border-bottom: 1px solid #dad8d8;
-        z-index: 6;
-    }
-    
-    .vz_logo {
-        width: 160px;
-        height: auto;
-    }
-    
-    .pageBody {
-        z-index: 1;
-        position: relative;
-        width: 100%;
-        @include negative;
-        padding: 100px 0 0 0;
-    }
-    
-    .row1 {
-        display: flex;
-        width: 100%;
-        @include positive;
-        flex-wrap: wrap;
-        border-bottom: 2px solid #d8dada;
-        @include bp(large) {
-            padding: 0 5%;
-            min-height: 400px;
-            background-image: linear-gradient(to right, #ffffff 50%, #000000 50%);
-        }
-    }
-    
-    .row2 {
-        display: flex;
-        width: 100%;
-        @include positive;
-        flex-wrap: wrap;
-        border-bottom: 2px solid #d8dada;
-        padding: 0 5%;
-        @include bp(small) {
-            min-height: 500px;
-        }
-        @include bp(large) {
-            min-height: 400px;
-            padding: 0 0 0 5%;
-        }
-    }
-    
-    .phoneImage {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        @include bp(small) {
-            max-width: 340px;
-        }
-        @include bp(large) {
-            max-width: 420px;
-        }
-    }
-    
-    .phoneImageColumn {
-        flex-direction: column;
-        justify-content: center;
-        padding: 24px 5% 0 0;
-        @include bp(small) {
-            padding: 24px 15% 0 0;
-        }
-    }
-    
-    .padLeft20 {
-        padding-left: 20px;
-    }
-    
-    .four-columns {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        @include bp(small) {
-            width: 50%;
-        }
-        @include bp(large) {
-            width: 25%;
-            padding-bottom: 0;
-        }
-    }
-    
-    .blackColumns {
-        position: relative;
-        @include negative;
-        @include vz_bold_font;
-        @include vz_body_font;
-        padding: 24px;
-        min-height: 250px;
-        @include bp(medium) {
-            min-height: 380px;
-            padding-right: 0;
-        }
-        @include bp(large) {
-            padding-right: 0;
-        }
-        p {
-            padding: 0 0 12px 0;
-        }
-    }
-    
-    .third_black_col {
-        height: 100%;
-    }
-    
-    .last_black_col {
-        @include bp(small) {
-            padding-left: 24px;
-        }
-    }
-    
-    .white_border {
-        border-bottom: 1px solid #ffffff;
-        border-right: none;
-        @include bp(small) {
-            border-right: 1px solid #ffffff;
-            border-bottom: none;
-        }
-    }
-    
-    .centerVertical {
-        @include bp(large) {
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-    
-    .insideColumn {
-        @include positive;
-        @include vz_bold_font;
-        @include vz_body_font;
-    }
-    
-    .firstColumnR1 {
-        padding: 24px 0 0 5%;
-        @include bp(medium) {
-            padding: 24px 0 0 10%;
-        }
-        @include bp(large) {
-            padding: 24px 0 0 0;
-        }
-    }
-    
-    .firstColumnR2 {
-        padding-top: 24px;
-        padding-bottom: 90px;
-    }
-    
-    .secondColumnR2 {
-        padding-bottom: 90px;
-        @include bp(small) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        @include bp(large) {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-    }
-    
-    .columns3_4_R2 {
-        padding-bottom: 90px;
-        @include bp(large) {
-            padding-bottom: 0px;
-        }
-    }
-    
-    .lineAbove {
-        border-top: 1px solid #000000;
-        padding-top: 10px;
-        @include bp(small) {
-            margin-right: 60px;
-        }
-        @include bp(large) {
-            height: 220px;
-        }
-    }
-    /* Form Styling */
-    
-    .form-row {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        @include positive;
-        @include vz_bold_font;
-        justify-content: left;
-        padding: 24px 5%;
-    }
-    
-    .form-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        @include bp(small) {
-            width: 50%;
-            max-width: 1200px;
-        }
-    }
-    
-    .form-element-box {
-        width: 100%;
-        display: flex;
-        font-weight: normal;
-        @include positive;
-        @include vz_body_font;
-        @include bp(small) {
-            width: calc(50% - 20px);
-            margin-right: 20px;
-        }
-        border: 2px solid #dad8d8;
-    }
-    
-    .form-field-label {
-        @include vz_body_font;
-        font-size: 15px;
-        padding: 14px 0;
-    }
-    
-    .input-text {
-        @include vz_body_font;
-        font-weight: normal;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%% */
+
+@mixin vz_legal_font {
+    font-family: 'VerizonNHGeTX', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: left;
+    p {
         font-size: 12px;
-        padding: 10px;
-        color: #585858;
+        line-height: 18px;
+        padding: 0 0 20px 0;
     }
-    
-    .blackFoot {
-        display: flex;
+}
+
+@mixin vz_bold_font {
+    font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-align: left;
+    h1 {
+        font-size: 46px;
+        line-height: 48px;
+        padding: 0 0 20px 0;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 38px;
+        padding: 0 0 20px 0;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 27px;
+        padding: 0 0 20px 0;
+    }
+}
+
+@mixin vz_body_font {
+    font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    text-align: left;
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        @include bp(medium) {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+@mixin negative {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@mixin positive {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    border: none 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.blackBar {
+    height: 30px;
+    @include negative;
+    width: 100%;
+    position: relative;
+}
+
+.navBarLiner {
+    padding: 0% 5%;
+    width: 100%;
+    @include positive;
+    @include vz_bold_font;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    position: relative;
+}
+
+.insideNavLiner {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.insideNavLiner a {
+    text-decoration: none;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #dad8d8;
+    z-index: 6;
+}
+
+.vz_logo {
+    width: 160px;
+    height: auto;
+}
+
+.pageBody {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    @include negative;
+    padding: 100px 0 0 0;
+}
+
+.row1 {
+    display: flex;
+    width: 100%;
+    @include positive;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d8dada;
+    @include bp(large) {
+        padding: 0 5%;
+        min-height: 400px;
+        background-image: linear-gradient(to right, #ffffff 50%, #000000 50%);
+    }
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    @include positive;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d8dada;
+    padding: 0 5%;
+    @include bp(small) {
+        min-height: 500px;
+    }
+    @include bp(large) {
+        min-height: 400px;
+        padding: 0 0 0 5%;
+    }
+}
+
+.phoneImage {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    @include bp(small) {
+        max-width: 340px;
+    }
+    @include bp(large) {
+        max-width: 420px;
+    }
+}
+
+.phoneImageColumn {
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 5% 0 0;
+    @include bp(small) {
+        padding: 24px 15% 0 0;
+    }
+}
+
+.padLeft20 {
+    padding-left: 20px;
+}
+
+.four-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include bp(small) {
+        width: 50%;
+    }
+    @include bp(large) {
+        width: 25%;
+        padding-bottom: 0;
+    }
+}
+
+.blackColumns {
+    position: relative;
+    @include negative;
+    @include vz_bold_font;
+    @include vz_body_font;
+    padding: 24px;
+    min-height: 250px;
+    @include bp(medium) {
+        min-height: 380px;
+        padding-right: 0;
+    }
+    @include bp(large) {
+        padding-right: 0;
+    }
+    p {
+        padding: 0 0 12px 0;
+    }
+}
+
+.third_black_col {
+    height: 100%;
+}
+
+.last_black_col {
+    @include bp(small) {
+        padding-left: 24px;
+    }
+}
+
+.white_border {
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+    @include bp(small) {
+        border-right: 1px solid #ffffff;
+        border-bottom: none;
+    }
+}
+
+.centerVertical {
+    @include bp(large) {
         flex-direction: column;
-        justify-content: left;
-        @include negative;
-        @include vz_legal_font;
-        padding: 24px 5% 100px 5%;
+        justify-content: center;
     }
-    
-    .bizReady_logo {
-        width: 200px;
-        height: auto;
-        padding: 0 0 24px 0;
+}
+
+.insideColumn {
+    @include positive;
+    @include vz_bold_font;
+    @include vz_body_font;
+}
+
+.firstColumnR1 {
+    padding: 24px 0 0 5%;
+    @include bp(medium) {
+        padding: 24px 0 0 10%;
     }
+    @include bp(large) {
+        padding: 24px 0 0 0;
+    }
+}
+
+.firstColumnR2 {
+    padding-top: 24px;
+    padding-bottom: 90px;
+}
+
+.secondColumnR2 {
+    padding-bottom: 90px;
+    @include bp(small) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include bp(large) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.columns3_4_R2 {
+    padding-bottom: 90px;
+    @include bp(large) {
+        padding-bottom: 0px;
+    }
+}
+
+.lineAbove {
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    @include bp(small) {
+        margin-right: 60px;
+    }
+    @include bp(large) {
+        height: 220px;
+    }
+}
+
+
+/* Form Styling */
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include positive;
+    @include vz_bold_font;
+    padding: 24px 5%;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    @include bp(medium) {
+        width: 50%;
+        max-width: 1200px;
+    }
+}
+
+.form-field-box {
+    // position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    @include positive;
+    @include vz_body_font;
+    @include bp(small) {
+        width: 25%;
+        // width: calc(50% - 20px);
+        padding-right: 20px;
+    }
+}
+
+.form-field-label {
+    @include vz_body_font;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 20px 0 6px 0;
+    font-weight: normal;
+}
+
+.outlined-textbox {
+    @include vz_body_font;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px;
+    color: #707070;
+    width: 100%;
+    border: 2px solid #dad8d8;
+}
+
+.blackFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    @include negative;
+    @include vz_legal_font;
+    padding: 24px 5% 100px 5%;
+}
+
+.bizReady_logo {
+    width: 200px;
+    height: auto;
+    padding: 0 0 24px 0;
+}
