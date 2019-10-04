@@ -30,6 +30,22 @@
     src: url('https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.eot?#iefix') format('embedded-opentype'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff2) format("woff2"), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.woff) format('woff'), url(https://info.verizonwireless.com/rs/324-BZD-350/images/VerizonNHGeDS-Bold.ttf) format('truetype')
 }
 
+// div,
+// span,
+// table,
+// td,
+// tr,
+// form {
+//     outline: 1px solid #e6ccff;
+// }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 /* %%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -355,43 +371,45 @@ button:focus {
     @include positive;
     @include vz_bold_font;
     padding: 24px 5%;
+    h3 {
+        padding-bottom: 0;
+    }
 }
 
-#form {
+.inline-form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: flex-start;
-    flex-direction: row;
+    align-items: left;
     @include bp(medium) {
-        width: 50%;
+        width: 75%;
         max-width: 1200px;
     }
 }
 
 .form-field-box {
-    // position: relative;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     @include positive;
     @include vz_body_font;
     @include bp(small) {
-        width: 25%;
+        width: 50%;
         // width: calc(50% - 20px);
         padding-right: 20px;
     }
 }
 
-.form-field-label {
+.inline-form label {
     @include vz_body_font;
     font-size: 15px;
     line-height: 15px;
-    padding: 20px 0 6px 0;
+    padding: 40px 0 10px 0;
     font-weight: normal;
 }
 
-.outlined-textbox {
+.inline-form input {
     @include vz_body_font;
     font-weight: normal;
     font-size: 15px;
@@ -399,6 +417,12 @@ button:focus {
     color: #707070;
     width: 100%;
     border: 2px solid #dad8d8;
+    border-color: #dad8d8 #dad8d8 #000000 #dad8d8;
+}
+
+.inline-form input:hover {
+    border: 2px solid #000000;
+    outline: none;
 }
 
 .blackFoot {
