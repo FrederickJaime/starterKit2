@@ -382,7 +382,7 @@ button:focus {
     flex-flow: row wrap;
     align-items: flex-start;
     align-items: left;
-    @include bp(medium) {
+    @include bp(large) {
         width: 75%;
         max-width: 1200px;
     }
@@ -394,7 +394,7 @@ button:focus {
     flex-direction: column;
     @include positive;
     @include vz_body_font;
-    @include bp(small) {
+    @include bp(medium) {
         width: 50%;
         // width: calc(50% - 20px);
         padding-right: 20px;
@@ -409,7 +409,8 @@ button:focus {
     font-weight: normal;
 }
 
-.inline-form input {
+.inline-form input,
+.styled-select {
     @include vz_body_font;
     font-weight: normal;
     font-size: 15px;
@@ -420,7 +421,28 @@ button:focus {
     border-color: #dad8d8 #dad8d8 #000000 #dad8d8;
 }
 
-.inline-form input:hover {
+.styled-select select {
+    @include vz_body_font;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #fff;
+    color: #707070;
+    width: 100%;
+}
+
+.styled-select select:hover {
+    border: none;
+    outline: none;
+}
+
+.select-selected {
+    background-color: #fff;
+}
+
+.inline-form input:hover,
+.styled-select:hover {
     border: 2px solid #000000;
     outline: none;
 }
