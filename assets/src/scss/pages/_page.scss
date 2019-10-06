@@ -422,6 +422,7 @@ button:focus {
 }
 
 .styled-select select {
+    position: relative;
     @include vz_body_font;
     border: none;
     outline: none;
@@ -445,6 +446,25 @@ button:focus {
 .styled-select:hover {
     border: 2px solid #000000;
     outline: none;
+}
+
+2.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid #337546;
+    border-color: #000 transparent transparent transparent;
+}
+
+
+/* Points the arrow upbwhen elect box is open: */
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
 }
 
 .blackFoot {
