@@ -6,8 +6,6 @@
 * {
     font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
     letter-spacing: 0;
-    overflow: visible;
-    white-space: normal;
 }
 
 header {
@@ -67,7 +65,9 @@ nav {
 		border-bottom: 1px solid #d8dada;
 
 
-	.headline_container {
+	.hl_cta_container {
+
+		.headline_container {
 		padding: 0px 5%;
 		position: relative;
 		top: 140px;
@@ -75,24 +75,29 @@ nav {
 		font-size: 45px;
 		line-height: 47px;
 		font-weight: bold;
-	}
-
-	.cta_container {
-		
-		position: relative;
-		top: 260px;
-
-		a {
-			padding: 0 5%;
-			font-weight: bold;
-			font-size: 22px;
-			padding: 15px 40px;
-			border: 1px $black solid;
-			border-radius: 32px;
-			color: $black;
-			text-decoration: none;
 		}
+
+		.cta_container {
+			
+			position: relative;
+			top: 260px;
+			padding: 0 5%;
+
+			a {
+
+				font-weight: bold;
+				font-size: 22px;
+				padding: 15px 40px;
+				border: 1px $black solid;
+				border-radius: 32px;
+				color: $black;
+				text-decoration: none;
+			}
+		}
+
 	}
+
+	
 }
 
 

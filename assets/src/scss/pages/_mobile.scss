@@ -2,6 +2,7 @@
 
 	.hero {
 		// background: none;
+		position: relative;
 		height: 800px;
 		background: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VAB33797_hero_background.jpg);
 		background-position: top 300px right 0px;
@@ -11,27 +12,23 @@
 	}
 
 	.hl_cta_container {
-		height: auto;
-		background-color: $white;
+		top: 110px !important;
+		// height: 350px;
+		position: relative;
+		background-color: red;
 	}
 
 		.headline_container {
-			height: 100%;
+			height: 100px;
 			width: 100% !important;  
 				// FREDIE - why do I need this important? 
-			padding: 5%;
-			position: relative;
-			top: 170px !important;
-			width: 550px;
 			font-size: 45px;
 			line-height: 47px;
 			font-weight: bold;
 		}
 
 		.cta_container {
-			height: 100%
-			position: relative;
-			top: 40px;
+			height: 100%;
 		}
 
 }
