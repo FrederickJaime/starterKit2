@@ -8,19 +8,12 @@
     letter-spacing: 0;
 }
 
-header {
-	height: 30px;
-	width: 100%;
-	background-color: $black;
-	color: $white;
-	display: block;
-	position: fixed;
-}
+
 
 nav {
 	position: fixed;
-	top:31px;
-	height: 80px;
+	top:0px;
+	height: 110px;
 	vertical-align: middle;
 	width: 100%;
 	padding: 20px 5%;
@@ -28,17 +21,15 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #d8dada;
+	border-top: 30px solid #000000;
 	background-color: #ffffff;
 	z-index: 1;
-
-}
 
 	.logo {
 		width: 160px;
 		height: 35px;
 		margin: 0;
 		vertical-align: middle;
-		float: left;
 		display: block;
 	}
 
@@ -50,47 +41,61 @@ nav {
 		vertical-align: middle;
 		font-weight: bold;
 		text-align: right;
-		color: $black;
-		float: right;
+		color: black;
 	}
 
-.hero {
+}
 
-	height: 500px;
+
+
+.hero {
+	position: relative;
+	top: 110px;
+	height: 700px;
 	width: 100%;
 	background: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VAB33797_hero_background.jpg);
-	background-position: top 60px right 0px;
-	background-size: 130%;
+	background-size: 200%;
+	background-position: bottom right;
 	background-repeat: no-repeat;
-		border-bottom: 1px solid #d8dada;
+	border-bottom: 1px solid #d8dada;
+
+	@include bp(md) {
+		background: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VAB33797_hero_background.jpg);
+		background-size: contain;
+		background-position: top right;
+		background-repeat: no-repeat;
+		height: 500px;
+	}
 
 
 	.hl_cta_container {
 
+		background-color: white;
+		padding: 30px 0;
+
+			@include bp(md) {
+				background-color: transparent;
+			}
+
 		.headline_container {
-		padding: 0px 5%;
-		position: relative;
-		top: 140px;
-		width: 550px;
-		font-size: 45px;
-		line-height: 47px;
-		font-weight: bold;
+		padding: 30px 5%;
+		width: 100%;
+		font-size: 45px; line-height: 47px; font-weight: bold;
+
+			@include bp(md) {
+				width: 500px;
+			}
+
 		}
 
 		.cta_container {
-			
-			position: relative;
-			top: 260px;
-			padding: 0 5%;
-
+			padding: 30px 5%;
 			a {
-
-				font-weight: bold;
-				font-size: 22px;
+				font-weight: bold; font-size: 22px;
 				padding: 15px 40px;
-				border: 1px $black solid;
+				border: 1px black solid;
 				border-radius: 32px;
-				color: $black;
+				color: black;
 				text-decoration: none;
 			}
 		}
@@ -101,4 +106,111 @@ nav {
 }
 
 
+.sec_two {
+	border-top: 2px solid #d8dada;
+position: relative;
+display: flex;
+flex-flow: row wrap;
+justify-content: stretch;
+height: auto;
+width:100%;
+
+	@include bp(md) {
+		height: 400px;
+	}
+
+	.sec_two__devices_container {
+	position: relative;
+	background-color: white;
+	display: flex;
+	flex-flow: row no-wrap;
+
+	@include bp(md) {
+		flex: 2;
+	}
+
+		.sec_two__devices_hl {
+			position: relative;
+			padding: 30px 10%;
+			font-size: 35px;
+			font-weight: bold;
+			width:300px;
+			flex: 3;
+
+		}
+
+		.sec_two__devices_img {
+			position: relative;
+			padding: 30px 5% 20px 5%;
+			// width: 50%;
+			flex:4;
+			vertical-align: bottom;
+			align-self: flex-end;
+
+
+
+		}
+	}
+
+	.sec_two__offersANDprotect_container {
+		display: flex;
+		flex-flow: row no-wrap;
+		justify-content: stretch;
+		font-size: 25px;
+		background-color: white;
+
+		@include bp(md) {
+				flex: 2;
+			}
+
+		.sec_two__offers_container {
+			// flex: 1;
+			width: 100%;
+			padding: 20px 5%;
+			position: relative;
+			background-color: black;
+			color: white;
+			border-right: 2px solid white;
+
+			// span {white-space: nowrap;}
+
+			@include bp(md) {
+				flex: 1;
+			}
+		}
+
+		.sec_two__protect_container {
+			// flex: 1;
+			width: 100%;
+			padding: 20px 5%;
+			position: relative;
+			background-color: black;
+			color: white;
+
+			@include bp(md) {
+				flex: 1;
+			}
+
+			// span {white-space: nowrap;}
+
+			ul {
+				margin:0;
+				padding-top:10px;
+				margin-left:-26px;
+			}
+
+			li { margin: 0; 
+				padding: 0;}
+
+
+
+
+
+		}
+	}
+}
+
+.sec_two__protect_bodycopy {
+	font-size: 14px;
+}
 
