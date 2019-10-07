@@ -1,0 +1,12 @@
+// widths
+$container--inner: 90%;
+
+// breakpoints
+$break--ultrawide: 1600px;
+$break--tablet: 1024px;
+$break--mobile: 767px;
+
+//media queries
+$media--ultrawide: only screen and (min-width: $break--ultrawide);
+$media--tablet: only screen and (max-width: $break--tablet);
+$media--mobile: only screen and (max-width: $break--mobile);
