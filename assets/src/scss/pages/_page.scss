@@ -73,6 +73,7 @@ xlarge: 1440px);
     font-family: 'VerizonNHGeTX', Helvetica, Arial, sans-serif;
     letter-spacing: 0;
     text-align: left;
+    font-weight: normal;
     p {
         font-size: 12px;
         line-height: 18px;
@@ -382,6 +383,7 @@ button:focus {
     flex-flow: row wrap;
     align-items: flex-start;
     align-items: left;
+    padding: 0 0 5% 0;
     @include bp(large) {
         width: 75%;
         max-width: 1200px;
@@ -395,13 +397,12 @@ button:focus {
     @include positive;
     @include vz_body_font;
     @include bp(medium) {
-        width: 50%;
-        // width: calc(50% - 20px);
-        padding-right: 20px;
+        width: calc(50% - 20px);
+        margin-right: 20px;
     }
 }
 
-.inline-form label {
+.form-field-box label {
     @include vz_body_font;
     font-size: 15px;
     line-height: 15px;
@@ -409,16 +410,24 @@ button:focus {
     font-weight: normal;
 }
 
-.inline-form input,
+.form-field-box input,
 .styled-select {
+    position: relative;
     @include vz_body_font;
     font-weight: normal;
     font-size: 15px;
     padding: 10px;
-    color: #707070;
+    color: #000000;
+    background-color: #fff;
     width: 100%;
     border: 2px solid #dad8d8;
     border-color: #dad8d8 #dad8d8 #000000 #dad8d8;
+}
+
+.inline-form input:hover,
+.styled-select:hover {
+    border: 2px solid #000000;
+    outline: none;
 }
 
 .styled-select select {
@@ -429,42 +438,32 @@ button:focus {
     font-size: 15px;
     padding: 10px;
     background-color: #fff;
-    color: #707070;
+    color: #000000;
     width: 100%;
 }
 
-.styled-select select:hover {
-    border: none;
-    outline: none;
+.styled-select select:disabled {
+    color: #707070;
 }
 
-.select-selected {
-    background-color: #fff;
+.styled-select select:disabled {
+    color: #707070;
 }
 
-.inline-form input:hover,
-.styled-select:hover {
-    border: 2px solid #000000;
-    outline: none;
+.legend-text {
+    @include vz_legal_font;
+    color: #333333;
 }
 
-2.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 10px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid #337546;
-    border-color: #000 transparent transparent transparent;
-}
-
-
-/* Points the arrow upbwhen elect box is open: */
-
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #000 transparent;
-    top: 7px;
+.black-button-14 {
+    display: flex;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #000;
+    @include negative;
+    @include vz_bold_font;
+    padding: 15px 40px;
+    align-self: flex-start;
 }
 
 .blackFoot {
