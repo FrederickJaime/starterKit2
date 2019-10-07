@@ -1,0 +1,31 @@
+.header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  height: 106px;
+  max-height: 106px;
+  background-color: $color--white;
+  border-top: 30px solid $color--black;
+  border-bottom: 1px solid $color--border-grey;
+}
+
+.header-container {
+  margin: 0 auto;
+  padding: 6px 0;
+  width: $container--inner;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 160px;
+  height: auto;
+  padding-bottom: 4px;
+}
+
+.header-nav-linkcolor {
+  text-decoration: none;
+  color: inherit;
+}
+
