@@ -1,9 +1,10 @@
 
-@import './mixins';
-@import './colors';
-@import './variables';
-@import './global';
-@import './fonts';
-@import './pages/intro';
-@import './pages/header';
-@import './pages/page';
+@import './abstract/mixins';
+@import './abstract/colors';
+@import './abstract/variables';
+@import './base/global';
+@import './base/fonts';
+@import './components/button';
+@import './layout/page';
+@import './layout/header';
+@import './layout/hero';
