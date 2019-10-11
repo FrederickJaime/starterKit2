@@ -149,6 +149,13 @@
             text-decoration-line: none;
         }
         
+        .no-break {
+            display: none;
+            @include bp(medium) {
+                display: block;
+            }
+        }
+        
         .blackBar {
             height: 30px;
             @include negative;
@@ -227,6 +234,10 @@
             background: none;
             padding: 15px 50px;
             border: 1px solid #000000;
+            @include bp(medium) {
+                position: absolute;
+                bottom: 50px;
+            }
         }
         
         .hero {
@@ -235,7 +246,7 @@
             @include positive;
             border-bottom: 2px solid #d8dada;
             @include bp(large) {
-                background: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VAB33797_hero_background.jpg);
+                background: url("/images/VAB33797_hero_background.jpg");
                 height: 500px;
                 background-position: bottom 0 right 0;
                 background-size: cover;
@@ -250,15 +261,11 @@
             width: 100%;
             height: auto;
             @include vz_bold_font;
-            padding: 50px 0 0 5%;
+            padding: 50px 5% 0 5%;
             @include bp(medium) {
-                padding: 24px 0 24px 5%;
+                padding: 24px 0 50px 5%;
                 height: 500px;
             }
-            /* background: url("VAB33797_hero_background_mobile.jpg") no-repeat;
-                // @include bp(medium) {
-                //     background: url("VAB33797_hero_background.jpg");
-            }*/
         }
         
         .mobile-hero-image {
