@@ -45,7 +45,13 @@
     * {
         box-sizing: border-box;
     }
+
+  
     /* %%%%%%%%%%%%%%%%%%%%%%% */
+        
+        body {
+            background-color: #fff;
+        }
         
         $breakpoints: ( xsmall: 320px,
         small: 540px,
@@ -234,7 +240,7 @@
             background: none;
             padding: 15px 50px;
             border: 1px solid #000000;
-            @include bp(medium) {
+            @include bp(large) {
                 position: absolute;
                 bottom: 50px;
             }
@@ -250,8 +256,54 @@
                 height: 500px;
                 background-position: bottom 0 right 0;
                 background-size: cover;
-                transition: 0.5s;
             }
+        }
+        
+        #hero-animate {
+            position: relative;
+            width: 100%;
+            @include positive;
+            border-bottom: 2px solid #d8dada;
+            @include bp(large) {
+                background: url("/images/VAB33797_hero_background.jpg") no-repeat;
+                height: 500px;
+                background-position: bottom 0 right 0;
+                background-size: 100%;
+            }
+        }
+        
+        .mobile-hero-img-animate {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+            padding-top: 30px;
+            @include bp(large) {
+                display: none;
+            }
+        }
+        
+        #hero-container-animate {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            @include vz_bold_font;
+            padding: 50px 5% 0 5%;
+            @include bp(large) {
+                padding: 24px 0 50px 5%;
+                height: 500px;
+            }
+        }
+        
+        .whiteness {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: none;
         }
         
         .hero-container {
@@ -262,7 +314,7 @@
             height: auto;
             @include vz_bold_font;
             padding: 50px 5% 0 5%;
-            @include bp(medium) {
+            @include bp(large) {
                 padding: 24px 0 50px 5%;
                 height: 500px;
             }
@@ -274,7 +326,7 @@
             object-fit: cover;
             height: 400px;
             padding-top: 30px;
-            @include bp(medium) {
+            @include bp(large) {
                 display: none;
             }
         }
