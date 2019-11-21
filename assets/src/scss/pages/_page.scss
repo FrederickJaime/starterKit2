@@ -1,401 +1,67 @@
- .fontNHGText {
-     font-family: 'VerizonNHGeTX', Helvetica, Arial, sans-serif !important;
-     letter-spacing: 0 !important
- }
+@font-face {
+  font-family: Circular;
+  src: url('https://resource.alaskaair.net/stylesheets/circular/ASCircularWeb-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url('https://resource.alaskaair.net/stylesheets/circular/ASCircularWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
-    font-family: 'VerizonNHGeDS', Helvetica, Arial, sans-serif;
-    letter-spacing: 0;
+	font-family: Circular, Arial, Helvetica, sans-serif;
 }
 
 
+header {
 
-nav {
-	position: fixed;
-	top:0px;
-	height: 110px;
-	vertical-align: middle;
-	width: 100%;
-	padding: 20px 5%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid #d8dada;
-	border-top: 30px solid #000000;
-	background-color: #ffffff;
-	z-index: 1;
+  background-color: #01426a;
 
-	.logo {
-		width: 160px;
-		height: 35px;
-		margin: 0;
-		vertical-align: middle;
-		display: block;
-	}
-
-	.nav_link {
-		font-size: 20px;
-		line-height: 100%;
-		padding: 10px 0;
-		margin: 0;
-		vertical-align: middle;
-		font-weight: bold;
-		text-align: right;
-		color: black;
-	}
+  img {
+    width: 185px;
+    height: auto;
+  }
 
 }
-
 
 
 .hero {
-	position: relative;
-	top: 110px;
-	height: 700px;
-	width: 100%;
-	background: url(https://info.verizonwireless.com/rs/324-BZD-350/images/VAB33797_hero_background.jpg);
-	background-size: 200%;
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	border-bottom: 1px solid #d8dada;
 
-	@include bp(md) {
-		background-size: cover;
-		background-position: bottom 0 right 0;
-		height: 500px;
-	}
-
-
-	.hl_cta_container {
-
-		background-color: white;
-		padding: 30px 0;
-
-		@include bp(md) {
-			background-color: transparent;
-		}
-
-			.headline_container {
-			padding: 30px 5%;
-			width: 100%;
-			font-size: 45px; line-height: 47px; font-weight: bold;
-
-				@include bp(md) {
-					width: 500px;
-				}
-			}
-
-			.cta_container {
-				padding: 30px 5%;
-				a {
-					font-weight: bold; font-size: 22px;
-					padding: 15px 40px;
-					border: 1px black solid;
-					border-radius: 32px;
-					color: black;
-					text-decoration: none;
-				}
-			}
-	}
-}
-
-
-.sec_two {
-border-top: 2px solid #d8dada;
-position: relative;
-display: flex;
-flex-flow: row wrap;
-height: auto;
-width:100%;
-
-	@include bp(md) {
-		height: 400px;
-	}
-
-	.sec_two__devices_container {
-	position: relative;
-	background-color: white;
 	display: flex;
+	flex-flow: column wrap;
+	justify-content: top;
+	align-items: center;
+	background: #ffffff url("https://static.cdn.responsys.net/i5/responsysimages/content/alaskaair/2019_windowseat_eastcoast_primary_bg.jpg") no-repeat;
+	background-position: center bottom;
+	background-size: 130%;
+	min-height: 600px;
 
-	@include bp(md) {
-		flex: 2;
-	}
-
-		.sec_two__devices_hl {
-			position: relative;
-			padding: 30px 10%;
-			font-size: 35px;
-			font-weight: bold;
-			width:300px;
-			flex: 3;
-		}
-
-		.sec_two__devices_img {
-			position: relative;
-			padding: 30px 5% 20px 5%;
-			flex: 4;
-			vertical-align: bottom;
-			align-self: flex-end;
-		}
-	}
-
-	.sec_two__offersANDprotect_container {
+	div {
+		padding-top: 40px;
+		width: 50%;
 		display: flex;
-		flex-flow: row no-wrap;
-	
-		font-size: 25px;
-		background-color: white;
-
-		@include bp(md) {
-				flex: 2;
-			}
-
-		.sec_two__offers_container {
-			width: 100%;
-			padding: 20px 5%;
-			position: relative;
-			background-color: black;
-			color: white;
-			border-right: 2px solid white;
-
-			@include bp(md) {
-				flex: 1;
-			}
-		}
-
-		.sec_two__protect_container {
-
-			width: 100%;
-			padding: 20px 5% 48px 5%;
-			position: relative;
-			background-color: black;
-			color: white;
-
-			@include bp(md) {
-				flex: 1;
-			}
-
-			ul {
-				margin:0;
-				padding-top:10px;
-				margin-left:-26px;
-			}
-
-			li { margin: 0; 
-				padding: 0;}
-		}
-	}
-}
-
-.sec_two__protect_bodycopy {
-font-size: 18px;
-
-	@include bp(md) {
-	font-size: 14px;
-	}
-}
-
-.sec_3 {
-// border-top: 2px solid #d8dada;
-position: relative;
-// display: flex;
-// justify-content: center; // HORIZONTAL ALIGNMENT
-//align-items: flex-start; // VERTICAL ALIGNMENT
-height: auto;
-width:100%;
-background-color: white;
-font-weight: bold;
-
-	@include bp(md) {
-	display: flex;
-	flex-flow: row nowrap;
-	}
-}
-
-.sec_3__bodycopy {
-font-size: 14px;
-line-height: 14px;
-font-weight: normal;
-}
-
-
-.h2 {
-font-size: 58px;
-line-height: 58px;
-}
-
-.h3 {
-font-size: 44px;
-line-height: 44px;
-}
-
-	.sec_3__AB {
-	width: 100%;
-	height: auto;	
-	background-color: white;
-	display: flex;
-	flex-flow: row nowrap;
-	
+		flex-flow: column wrap;
+		align-items: center;
+		text-align: center;
 	}
 
-		.sec_3__A {
-		height:220px;
-		width: 50%;
-		padding: 20px 5%;
-		// position: relative;
-		background-color: white;
-		color: black;
-		}
-
-		.sec_3__B {
-
-		height:220px;
-		width: 50%;
-		padding: 20px 5%;
-		// position: relative;
-		background-color: white;
-		color: black;
-		}
-
-	.sec_3__CD {
-	width: 100%;
-	height: auto;	
-	background-color: white;
-	display: flex;
-	flex-flow: row nowrap;
-	
+	img {
+	    width: 72px;
+	    height: 95px;
 	}
 
-		.sec_3__C {
-		height:220px;
-		width: 50%;
-		padding: 20px 5%;
-		// position: relative;
-		background-color: white;
-		color: black;
-		}
-
-		.sec_3__D {
-
-		height:220px;
-		width: 50%;
-		padding: 20px 5%;
-		// position: relative;
-		background-color: white;
-		color: black;
-		}
-
-
-
-.sec_4 {
-position: relative;
-display: flex;
-flex-flow: column wrap;
-// justify-content: center; // HORIZONTAL ALIGNMENT
-//align-items: flex-start; // VERTICAL ALIGNMENT
-
-height: auto;
-width:100%;
-background-color: black;
-font-weight: bold;
-color: white;
-padding: 24px 5%;
-
-	@include bp(md) {
-	display: flex;
-	flex-flow: row wrap;
+	h1 {
+		font-size: 1.5em;
+		color: #2774ae;
 	}
-}
-
-a {
-	color: black;
-	text-decoration: none;
-	background-color: white;
-	padding: 10px 40px;
-	width: 100px;
-	border-radius: 40px;
-	}
-
-.sec_4__A {
-
-	width: 100%;
-
-	@include bp(md) {
-	flex: 1;
-	width: 100%;
-	display: block;
-
-		
-
-	}
-}
-
-.sec_4__cta {
-	padding-top: 40px;
-
-	a {
-	color: black;
-	text-decoration: none;
-	background-color: white;
-	padding: 10px 40px;
-	width: 100px;
-	border-radius: 40px;
-	}
-}
-
-.sec_4__bodycopy {
-	font-weight: normal;
-}
-
-.hide_dt {
-	@include bp(md) { 
-		display: none;
-	}
-}
-
-.hide_mob {
-	display: none;
-	width: 0;
-	height: 0;
-
-		@include bp(md) { 
-		display: inline;
-		width: auto;
-		height: auto;
-	}
-}
-
-.sec_4__B {
-
-	width: 100px;
-	display: none;
-
-		@include bp(md) {
-	flex: 1;
-	// justify-content: 
-	align-items: flex-start;
-	display: block;
-	width: 200px;
-
-
-	}
-
-padding-top:100px;
-
-
-}
-
-
-
-.sec_4__C { 
-
-			@include bp(md) {
-	flex: 1;
-	// justify-content: 
-	align-items: flex-start;
-	display: inline;
-
-
-	}
-
+	 p {
+	 	margin: 0;
+	 	padding-bottom: 200px;
+	 }
 }
