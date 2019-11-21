@@ -31,6 +31,10 @@ header {
 }
 
 
+//
+// STARTED WITH DESKTOP FIRST INSTEAD OF MOBILE.. RESTART!!!!
+//
+
 .hero {
 
 	display: flex;
@@ -42,9 +46,6 @@ header {
 	background-size: 130%;
 	min-height: 600px;
 
-	@include bp(sm) {
-		padding-top:0px !important;
-		}
 
 	div {
 		padding-top: 40px;
@@ -53,6 +54,11 @@ header {
 		flex-flow: column wrap;
 		align-items: center;
 		text-align: center;
+
+		// anything bigger than 'md' breakpoint gets the below styles
+		@include bp(md) {
+			padding-top: 0px;
+		}
 	}
 
 	img {
