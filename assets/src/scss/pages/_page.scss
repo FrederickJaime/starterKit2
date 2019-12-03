@@ -31,9 +31,37 @@ header {
 }
 
 
-//
-// STARTED WITH DESKTOP FIRST INSTEAD OF MOBILE.. RESTART!!!!
-//
+
+		// HEADLINES AND FONTS
+		h1 {
+		font-size: 1.5em;
+		color: #2774ae;
+
+			@include bp(md) {
+				font-size: 2em;
+			}
+		}
+
+
+		h2 {
+			font-size: 1.5em;
+			@include bp(md) {
+				font-size: 2em;
+			}
+		}
+
+		.pre_hl {
+			
+			font-weight: bold;
+			font-size: 1em;
+			@include bp(md) {
+				font-size: 1.75em;
+			}
+			
+			
+		}
+
+
 
 .hero {
 
@@ -42,36 +70,79 @@ header {
 	justify-content: top;
 	align-items: center;
 	background: #ffffff url("https://static.cdn.responsys.net/i5/responsysimages/content/alaskaair/2019_windowseat_eastcoast_primary_bg.jpg") no-repeat;
-	background-position: center bottom;
-	background-size: 130%;
-	min-height: 600px;
+	background-position: 50% 90%;
+	background-size: 200%;
+	margin-bottom: 20px;
+
+	@include bp(md) {
+		background-size: 110%;
+		background-position: 30% 90%;
+		margin-bottom: 0px;
+		max-height: 550px;
+	}
 
 
 	div {
 		padding-top: 40px;
-		width: 50%;
+		width: 90%;
 		display: flex;
 		flex-flow: column wrap;
 		align-items: center;
 		text-align: center;
 
-		// anything bigger than 'md' breakpoint gets the below styles
+
 		@include bp(md) {
-			padding-top: 0px;
+			padding-top: 40px;
 		}
+
+		div {
+			margin: 0;
+			padding: 0;
+			width: 60%;
+			max-width: 400px;
+			font-size: .8em;
+			line-height: 1.5;
+		}
+
+		img {
+		    width: 60px;
+		    height: auto;
+		}
+
+	 	p {
+	 		font-size: 1.25em;
+		 	margin: 0;
+		 	padding-bottom: 280px;
+	 	}
+	}
+}
+
+.places_hero {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: top;
+	align-items: center;
+	background: #ffffff url("https://static.cdn.responsys.net/i5/responsysimages/content/alaskaair/2019_windowseat_eastcoast_places_marquee_bg.jpg") no-repeat;
+	background-position: center top;
+	background-size: 150%;
+	height: auto;
+	padding-top:16vw;
+	padding-bottom: 24vw;
+	// min-height: 300px;
+
+		@include bp(md) {
+		margin:3vw 3vw 3vw 3vw;
+		}
+
+	span, h2 {color: $white;}
+
+	.divider_white {
+		margin-top: 20px;
+		height: 2px;
+		width:30%;
+		max-width: 275px;
+		background-color: #ffffff;
 	}
 
-	img {
-	    width: 72px;
-	    height: 95px;
-	}
 
-	h1 {
-		font-size: 1.5em;
-		color: #2774ae;
-	}
-	 p {
-	 	margin: 0;
-	 	padding-bottom: 200px;
-	 }
 }
